@@ -12,3 +12,5 @@ Resources:
 - Ray-LLM https://github.com/ray-project/ray-llm 
 - LLmops workshop https://github.com/microsoft/llmops-workshop/tree/main/labs
 - hands-on-llms https://github.com/iusztinpaul/hands-on-llms
+- hands-on-LLMs https://github.com/vineet1409/hands-on-LLMs
+- Ai Senior https://github.com/Logisx/AI-Senior/tree/main/notebooks
