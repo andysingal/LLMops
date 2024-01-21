@@ -10,3 +10,4 @@ Resources:
 - Hamilton https://github.com/DAGWorks-Inc/hamilton
 - Trulens https://github.com/truera/trulens
 - Ray-LLM https://github.com/ray-project/ray-llm 
+- LLmops workshop https://github.com/microsoft/llmops-workshop/tree/main/labs 
