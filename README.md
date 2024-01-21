@@ -8,4 +8,5 @@ Resources:
 - LLM Guard https://github.com/laiyer-ai/llm-guard
 - LiteLLM https://github.com/BerriAI/litellm
 - Hamilton https://github.com/DAGWorks-Inc/hamilton
-- Trulens https://github.com/truera/trulens 
+- Trulens https://github.com/truera/trulens
+- Ray-LLM https://github.com/ray-project/ray-llm 
