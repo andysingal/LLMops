@@ -7,4 +7,5 @@ Resources:
 - https://github.com/phidatahq/phidata
 - LLM Guard https://github.com/laiyer-ai/llm-guard
 - LiteLLM https://github.com/BerriAI/litellm
-- Hamilton https://github.com/DAGWorks-Inc/hamilton 
+- Hamilton https://github.com/DAGWorks-Inc/hamilton
+- Trulens https://github.com/truera/trulens 
