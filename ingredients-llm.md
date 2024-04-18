@@ -8,3 +8,15 @@
 
 
 <img width="635" alt="Screenshot 2024-04-18 at 7 16 06 PM" src="https://github.com/andysingal/LLMops/assets/20493493/82cf7456-441c-4256-b81f-a781cdee7b20">
+
+The language models trained using the process described in this chapter and the next are called base models. Lately, model providers have been augmenting the base model by tuning it on much smaller datasets in order to steer them towards being more aligned with human needs and preferences. Some popular tuning modes are:
+
+1. Supervised instruction fine-tuning, so that the model is better at following human instructions.
+
+2. RLHF (Reinforcement Learning by Human Feedback), so that the model is better aligned with human preferences.
+
+3. Domain-adaptive or task-adaptive continued pre-training, so that the model is better attuned to specific domains and tasks.
+
+to name a few. Based on the specific augmentation carried out, the resulting models are called instruct models, chat models and so on.
+
+<img width="840" alt="Screenshot 2024-04-18 at 7 57 23 PM" src="https://github.com/andysingal/LLMops/assets/20493493/8bb61f91-c8fb-4dcc-8cda-4f0f0ee8edf5">
