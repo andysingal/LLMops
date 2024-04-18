@@ -6,4 +6,5 @@
 
 4. Architecture - What’s its internal structure? As mentioned in Chapter 2, most modern language models are based on the Transformer architecture. We will discuss the various architectural backbones- specifically encoder-only models, encoder-decoder models, and decoder-only models, and the rationale used by organizations training LLMs for their choice of architecture type.
 
-5. 
+
+<img width="635" alt="Screenshot 2024-04-18 at 7 16 06 PM" src="https://github.com/andysingal/LLMops/assets/20493493/82cf7456-441c-4256-b81f-a781cdee7b20">
