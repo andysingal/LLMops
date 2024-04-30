@@ -14,3 +14,6 @@ Resources:
 - hands-on-llms https://github.com/iusztinpaul/hands-on-llms
 - hands-on-LLMs https://github.com/vineet1409/hands-on-LLMs
 - Ai Senior https://github.com/Logisx/AI-Senior/tree/main/notebooks
+
+Source: https://docs.zenml.io/user-guide/llmops-guide 
+<img width="780" alt="Screenshot 2024-04-30 at 4 58 29 PM" src="https://github.com/andysingal/LLMops/assets/20493493/cb83d302-fc06-4801-8108-aa1940800526">
