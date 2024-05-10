@@ -25,3 +25,6 @@ Democracy thrives on the active participation of its citizens. But political deb
 
 This use case is similar to the second in that we’re dealing with a database of texts that is updated periodically. And indeed, to address it, we would again use a retrieval module that extracts the relevant transcripts upon receiving a user query. But instead of generating answers, this system would use an LLM to summarize all the underlying texts. In this way, users could get timely overviews of political debates tailored to their individual interests.
 
+Resources:
+
+-- [END-TO-END-GENERATIVE-AI-PROJECTS](https://github.com/GURPREETKAURJETHRA/END-TO-END-GENERATIVE-AI-PROJECTS/blob/main/README.md)
