@@ -17,3 +17,8 @@ Resources:
 
 Source: https://docs.zenml.io/user-guide/llmops-guide 
 <img width="780" alt="Screenshot 2024-04-30 at 4 58 29 PM" src="https://github.com/andysingal/LLMops/assets/20493493/cb83d302-fc06-4801-8108-aa1940800526">
+
+
+[DREAM](https://mlops.community/dream-distributed-rag-experimentation-framework/)
+
+<img width="876" alt="Screenshot 2024-05-17 at 1 21 02 PM" src="https://github.com/andysingal/LLMops/assets/20493493/0963870a-eceb-4b09-881a-66ec86fb75e0">
