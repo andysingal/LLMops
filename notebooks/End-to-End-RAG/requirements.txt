@@ -1,0 +1,12 @@
+beautifulsoup4
+langchain
+langchain_community
+langchain_core
+langchain_groq
+langchain_openai
+langchain_pinecone
+langchain_text_splitters
+nemoguardrails
+pinecone
+python-dotenv
+streamlit
