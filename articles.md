@@ -1,0 +1,1 @@
+[Imperva optimizes SQL generation from natural language using Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/imperva-optimizes-sql-generation-from-natural-language-using-amazon-bedrock/) 
