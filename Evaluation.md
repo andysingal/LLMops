@@ -5,3 +5,5 @@
 [Custom LLM Evaluations ⚙️: Function Calling Agent](https://www.youtube.com/watch?v=EfhylWtNb1s)
 
 [SummHay benchmark](https://github.com/salesforce/summary-of-a-haystack)
+
+[Deepval-LlamaIndex](https://docs.confident-ai.com/docs/integrations-llamaindex) 
