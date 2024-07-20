@@ -7,3 +7,5 @@
 [SummHay benchmark](https://github.com/salesforce/summary-of-a-haystack)
 
 [Deepval-LlamaIndex](https://docs.confident-ai.com/docs/integrations-llamaindex) 
+
+[DocBench](https://github.com/Anni-Zou/DocBench) 
