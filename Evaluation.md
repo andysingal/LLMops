@@ -11,3 +11,5 @@
 [DocBench](https://github.com/Anni-Zou/DocBench) 
 
 [ragas_examples](https://github.com/rajib76/ragas_examples/blob/main/05_answer_correctness.py)
+
+[langsmith-evaluation-helper](https://github.com/gaudiy/langsmith-evaluation-helper)
