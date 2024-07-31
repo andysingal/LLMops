@@ -13,3 +13,7 @@
 [ragas_examples](https://github.com/rajib76/ragas_examples/blob/main/05_answer_correctness.py)
 
 [langsmith-evaluation-helper](https://github.com/gaudiy/langsmith-evaluation-helper)
+
+
+[LLM Hallucination Index](https://github.com/rungalileo/hallucination-index) 
+
