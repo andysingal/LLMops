@@ -17,3 +17,6 @@
 
 [LLM Hallucination Index](https://github.com/rungalileo/hallucination-index) 
 
+
+
+[Running SWE-bench with LangSmith](https://docs.smith.langchain.com/tutorials/Developers/swe-benchmark)
