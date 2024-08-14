@@ -3,3 +3,7 @@
 [How to Build a RAG Chatbot with Agent Cloud and Google Sheets](https://www.freecodecamp.org/news/build-a-rag-chatbot-agent-cloud-google-sheets/) 
 
 [Introducing llama-agents: A Powerful Framework for Building Production Multi-Agent AI Systems](https://www.llamaindex.ai/blog/introducing-llama-agents-a-powerful-framework-for-building-production-multi-agent-ai-systems) 
+
+
+Series
+[LLMops-2](https://dev.to/lakhera2015/end-to-end-llmops-pipeline-part-2-fastapi-109p)
