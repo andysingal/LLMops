@@ -7,3 +7,5 @@
 
 Series
 [LLMops-2](https://dev.to/lakhera2015/end-to-end-llmops-pipeline-part-2-fastapi-109p)
+
+[Building a RAG system with Gemini for financial forecasting on Civo Kubernetes](https://www.civo.com/learn/build-rag-system-gemeni-financial-forecasting-kubernetes)
