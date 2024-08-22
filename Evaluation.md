@@ -20,3 +20,6 @@
 
 
 [Running SWE-bench with LangSmith](https://docs.smith.langchain.com/tutorials/Developers/swe-benchmark)
+
+
+<img width="585" alt="Screenshot 2024-08-22 at 10 30 29 PM" src="https://github.com/user-attachments/assets/15bb43e0-3474-434b-a858-cf5cbbd110d6">
