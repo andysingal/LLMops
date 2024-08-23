@@ -4,6 +4,7 @@
 
 [Introducing llama-agents: A Powerful Framework for Building Production Multi-Agent AI Systems](https://www.llamaindex.ai/blog/introducing-llama-agents-a-powerful-framework-for-building-production-multi-agent-ai-systems) 
 
+[Boosting LLMs: The Power of Model Collaboration](https://gradientflow.substack.com/p/boosting-llms-the-power-of-model)
 
 Series
 [LLMops-2](https://dev.to/lakhera2015/end-to-end-llmops-pipeline-part-2-fastapi-109p)
