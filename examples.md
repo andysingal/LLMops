@@ -12,3 +12,6 @@
 
 
 [Building Neural Search Pipelines with Azure and Qdrant: A Step-by-Step Guide](https://medium.com/towardsdev/building-neural-search-pipelines-with-azure-and-qdrant-a-step-by-step-guide-part-1-40c191084258)
+
+##Examples
+- [LLMdeploy](https://huggingface.co/OpenGVLab/InternVL2-8B-AWQ)
