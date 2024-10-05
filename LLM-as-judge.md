@@ -2,6 +2,12 @@
 
 [Mixture-of-Judges](https://x.com/_philschmid/status/1841752199904317868/photo/1)
 
+[RAG Evaluation with LLM-as-a-Judge + Synthetic Dataset Creation](https://generativeai.pub/rag-evaluation-with-llm-as-a-judge-synthetic-dataset-creation-7fce566310f5)
+<img width="654" alt="Screenshot 2024-10-05 at 10 06 35 AM" src="https://github.com/user-attachments/assets/a981ea5c-4f3d-4d14-9f0d-b666b633c713">
+
+
+
+
 How can we mitigate reward hacking in RLHF? 🤔 Constrained Generative Policy Optimization (CGPO) is a new RLHF method using Mixture of Judges (MoJ) from 
 @AIatMeta
 . CGPO outperforms PPO (single RM) on Alpaca Eval, Arena Hard, IFEval! 👀
