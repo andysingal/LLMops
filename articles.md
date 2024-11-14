@@ -12,3 +12,6 @@ Series
 [Building a RAG system with Gemini for financial forecasting on Civo Kubernetes](https://www.civo.com/learn/build-rag-system-gemeni-financial-forecasting-kubernetes)
 
 [Operationalize a Scalable AI With LLMOps Principles and Best Practices](https://dzone.com/articles/llmops-principles-and-best-practices)
+
+
+**[cowriterという AI](https://zenn.dev/microai/articles/fdb50328ffd22a)
