@@ -2,6 +2,8 @@
 
 [Mixture-of-Judges](https://x.com/_philschmid/status/1841752199904317868/photo/1)
 
+[Artificial Intelligence LLM-as-a-Judge: A Scalable Solution for Evaluating Language Models Using Language Models](https://www.unite.ai/llm-as-a-judge-a-scalable-solution-for-evaluating-language-models-using-language-models/)
+
 [RAG Evaluation with LLM-as-a-Judge + Synthetic Dataset Creation](https://generativeai.pub/rag-evaluation-with-llm-as-a-judge-synthetic-dataset-creation-7fce566310f5)
 <img width="654" alt="Screenshot 2024-10-05 at 10 06 35 AM" src="https://github.com/user-attachments/assets/a981ea5c-4f3d-4d14-9f0d-b666b633c713">
 
