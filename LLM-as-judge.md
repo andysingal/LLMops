@@ -9,6 +9,10 @@
 [Improve factual consistency with LLM Debates](https://aws.amazon.com/blogs/machine-learning/improve-factual-consistency-with-llm-debates/)
 
 [Llama-Bench](https://github.com/ggerganov/llama.cpp/blob/master/examples/llama-bench/README.md)
+
+<img width="1166" alt="Screenshot 2024-11-30 at 6 51 32 PM" src="https://github.com/user-attachments/assets/02a1087a-da9c-4efa-a0b2-3894611b7806">
+
+
 ![Screenshot 2024-11-29 084421](https://github.com/user-attachments/assets/b4b46cc5-c2f6-4928-8e47-30e455c79cf2)
 
 
