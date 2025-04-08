@@ -10,6 +10,8 @@
 
 [Llama-Bench](https://github.com/ggerganov/llama.cpp/blob/master/examples/llama-bench/README.md)
 
+[Arize-judge](https://github.com/Arize-ai/phoenix/blob/main/tutorials/evals/optimizing_llm_as_a_judge_prompts.ipynb)
+
 <img width="1166" alt="Screenshot 2024-11-30 at 6 51 32 PM" src="https://github.com/user-attachments/assets/02a1087a-da9c-4efa-a0b2-3894611b7806">
 
 
