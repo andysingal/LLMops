@@ -15,3 +15,6 @@ Series
 
 
 **[cowriterという AI](https://zenn.dev/microai/articles/fdb50328ffd22a)
+
+
+[How to deploy a real-world LLM app](https://www.realworldml.net/blog/how-to-deploy-a-real-world-llm-app)
