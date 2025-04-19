@@ -1,1 +1,6 @@
 [CI/CD preprocessing pipelines in LLM applications](https://circleci.com/blog/ci-cd-preprocessing-pipelines-in-llm-applications/)
+
+
+[OpenManus](https://github.com/mannaandpoem/OpenManus)
+
+Open-source framework for building and running AI agents, connects to tools and APIs, no invite code needed
