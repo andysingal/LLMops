@@ -22,6 +22,8 @@
 
 [Running SWE-bench with LangSmith](https://docs.smith.langchain.com/tutorials/Developers/swe-benchmark)
 
+[arena-hard-auto](https://github.com/lmarena/arena-hard-auto)
+
 
 ### Article
 
