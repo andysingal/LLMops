@@ -18,3 +18,5 @@ Series
 
 
 [How to deploy a real-world LLM app](https://www.realworldml.net/blog/how-to-deploy-a-real-world-llm-app)
+
+[12 Factor Agents - Principles for building reliable LLM applications](https://github.com/humanlayer/12-factor-agents/tree/main)
