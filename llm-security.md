@@ -6,3 +6,8 @@ Tinyauth is a simple authentication middleware that adds simple username/passwor
 [uth-langchain](https://auth0.com/blog/genai-tool-calling-build-agent-that-calls-gmail-securely-with-langgraph-vercelai-nextjs/)
 
 Learn how to build a tool-calling AI agent using LangGraph, Vercel AI SDK, and Next.js. Integrate different kinds of tools in them. Use Google services like Gmail, Calendar, and Drive as tools secured using Auth0 Token Vault.
+
+
+
+## Articles
+[Guardrails as Architecture: Safe guarding GenAI apps](https://dev.to/arbitrarybytes/guardrails-as-architecture-safe-guarding-genai-apps-46pd)
