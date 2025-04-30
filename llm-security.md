@@ -7,6 +7,10 @@ Tinyauth is a simple authentication middleware that adds simple username/passwor
 
 Learn how to build a tool-calling AI agent using LangGraph, Vercel AI SDK, and Next.js. Integrate different kinds of tools in them. Use Google services like Gmail, Calendar, and Drive as tools secured using Auth0 Token Vault.
 
+[LlamaFirewall](https://www.xugj520.cn/en/archives/ai-security-framework-llamafirewall.html)
+
+LlamaFirewall is an open-source security-focused guardrail framework designed to serve as a final layer of defense against security risks associated with AI agents. Unlike traditional moderation tools that mainly focus on filtering toxic content, LlamaFirewall provides system-level defenses tailored to modern agentic use cases, such as code generation, tool orchestration, and autonomous decision-making. It consists of a set of scanners for different security risks, including PromptGuardScanner, AlignmentCheckScanner, CodeShieldScanner, and customizable regex filters.
+
 
 
 ## Articles
