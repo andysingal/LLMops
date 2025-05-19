@@ -18,6 +18,8 @@
 
 [LLM Hallucination Index](https://github.com/rungalileo/hallucination-index) 
 
+[langfuse-RAGAS](https://langfuse.com/guides/videos/beginners-guide-to-rag-evaluation)
+
 
 
 [Running SWE-bench with LangSmith](https://docs.smith.langchain.com/tutorials/Developers/swe-benchmark)
