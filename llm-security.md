@@ -24,6 +24,15 @@ Industry-Specific Risks - Zombie diagonoses | Leaky credit cards
 Tools for Defense - OWASP Top 10 | AI Incident DB | AVID
 Actions Steps --> Test | Filter | Learn from fails
 
+## Key LLM Vulnerabilities
+Bias & Streotypes --> Parrots repeating bad habbits
+Sensitive Info Leaks - Diaries the AI shouldn't read
+Service Disruption --> Hackers causing traffic jams
+Hallucinations --> Creative storytellers
+
+### Penetration Testing
+-- Find & Map Weaknesses 
+
 
 ## Articles
 [Guardrails as Architecture: Safe guarding GenAI apps](https://dev.to/arbitrarybytes/guardrails-as-architecture-safe-guarding-genai-apps-46pd)
