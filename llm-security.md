@@ -12,6 +12,18 @@ Learn how to build a tool-calling AI agent using LangGraph, Vercel AI SDK, and N
 LlamaFirewall is an open-source security-focused guardrail framework designed to serve as a final layer of defense against security risks associated with AI agents. Unlike traditional moderation tools that mainly focus on filtering toxic content, LlamaFirewall provides system-level defenses tailored to modern agentic use cases, such as code generation, tool orchestration, and autonomous decision-making. It consists of a set of scanners for different security risks, including PromptGuardScanner, AlignmentCheckScanner, CodeShieldScanner, and customizable regex filters.
 
 
+## Few things to remember
+
+-- Raw Power --> Versatile but unpredictable (bias, toxicity)
+-- Guardrails Needed --> Filters, audits, security checks
+-->Shared Risks --> Bias | Privacy leaks | Misuse
+--> Unique App Risks --> Hallucinations | Off-topic rambles | Data leaks
+
+### Customizing LLM Safety
+Industry-Specific Risks - Zombie diagonoses | Leaky credit cards
+Tools for Defense - OWASP Top 10 | AI Incident DB | AVID
+Actions Steps --> Test | Filter | Learn from fails
+
 
 ## Articles
 [Guardrails as Architecture: Safe guarding GenAI apps](https://dev.to/arbitrarybytes/guardrails-as-architecture-safe-guarding-genai-apps-46pd)
