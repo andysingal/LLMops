@@ -20,3 +20,6 @@ Series
 [How to deploy a real-world LLM app](https://www.realworldml.net/blog/how-to-deploy-a-real-world-llm-app)
 
 [12 Factor Agents - Principles for building reliable LLM applications](https://github.com/humanlayer/12-factor-agents/tree/main)
+
+
+[Mastering LLMOps: How to Reliably Deploy Large Language Models in Production](https://generativeai.pub/mastering-llmops-how-to-reliably-deploy-large-language-models-in-production-59d3ee5f670a)
