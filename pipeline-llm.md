@@ -18,3 +18,6 @@ Open-source framework for building and running AI agents, connects to tools and 
 
 A Developer's Guide to Hosting 3B LLM for Millions of Queries in Parallel Whether you are building agents, RAG bots, or LLM apps, the core of your product is usually an LLM accessed via API. Providers like Together.ai optimize these models for efficient and scalable use, rather than hosting them in full precision.
 
+## Articles
+
+[Pipeline of Agents Pattern: Building Maintainable AI Workflows with LangGraph](https://vitaliihonchar.com/insights/how-to-build-pipeline-of-agents)
