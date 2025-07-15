@@ -1,5 +1,12 @@
 [Data Preparation For Llama](https://www.tutorialspoint.com/llama/llama-data-preparation.htm)
 
+[Customizing Pipelines and Data Workflows: Advanced Models and Efficient Processing](https://github.com/RichardHightower/art_hug_08/tree/main)
+
+## Article
+[Customizing Pipelines and Data Workflows: Advanced Models and Efficient Processing](https://medium.com/@richardhightower/customizing-pipelines-and-data-workflows-advanced-models-and-efficient-processing-1ba9fabdca9a)
+
+
+
 
 [DocETL: Powering Complex Document Processing Pipelines](https://github.com/ucbepic/docetl)
 
