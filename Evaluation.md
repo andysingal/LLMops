@@ -33,6 +33,8 @@
 
 [Evaluating Accuracy in RAG Applications: A Guide to Automated Evaluation](https://dzone.com/articles/rag-accuracy-metrics-automated-evaluation)
 
+[Evaluating Long-Context Question & Answer Systems](https://eugeneyan.com/writing/qa-evals/?twclid=2-44mq6dobl8i4tvgb8wcu9shwd)
+
 
 <img width="585" alt="Screenshot 2024-08-22 at 10 30 29 PM" src="https://github.com/user-attachments/assets/15bb43e0-3474-434b-a858-cf5cbbd110d6">
 
