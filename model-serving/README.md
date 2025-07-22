@@ -6,7 +6,10 @@ Model data: A model’s data includes its weights, bias, and configuration. Weig
 Model architecture:  Architecture refers to the structure and design of an ML model. It defines how the model is organized, including the types and number of layers, the connections between layers, and the operations the model performs. The architecture determines how the model processes input data to produce output predictions or decisions.
 
 Model execution code: A model’s execution code is what the model runs. It generally initializes the architecture in the model serving framework, loads weights, and runs predictions (or other outputs).
- 
+
+In the model-serving context, ML and DevOps engineers typically focus less on models’ internal details—such as their architecture, training methods, and file formats—and instead treat models as black boxes. This is because modern model-serving frameworks like vLLM and TensorRT-LLM handle the complexities of model execution for us, providing a high-level abstraction that makes running model predictions simpler and more efficient.
+
+
  
  
  Model serving refers to deploying an ML model in a production environment, where it can process new data and generate predictions
@@ -43,6 +46,24 @@ In model serving, we focus more on the following:
 - Cost to Serve: The most decisive factor of them all. We use cost-to-serve as a key factor to evaluate different serving approaches and trade-offs.
 
 Model serving is a highly practical, engineering-focused field. Unlike AI research and model training, it does not require a deep understanding of ML algorithms or an academic background in AI. Instead, it emphasizes deploying and integrating models into real-world applications using existing tools and frameworks.
+
+Smaller models are becoming much more powerful and providing fine-tuning for custom data and requirements, faster inference, better and more consistent results, and a lower cost-to-serve
+
+Using Foundation LLM for model-serving: 
+
+Working with a fully managed LLM provider like OpenAI, DeepSeek, or Anthropic, is a great starting point to accelerate development and validate your business model.
+
+- However, as your usage scales, the serving costs start to become unsustainable. To optimize expenses, you consider migrating to a customized model serving solution: for example, using open-source LLMs, selecting optimized serving frameworks, and fine-tuning inference performance. This should significantly reduce your costs while maintaining flexibility and keeping you in control.
+
+- Given the high volume of LLM inference requests and the involvement of sensitive customer data, fully outsourcing your model serving could introduce data-security risks and escalate your operational costs.
+
+### Why Optimize Model Serving (Especially for LLMs)?
+
+- Model serving optimization refers to the process for improving the model serving performance, such as reducing serving latency, increasing throughput, and optimizing resource usage.
+- ****** Model serving optimization refers to the process for improving the model serving performance, such as reducing serving latency, increasing throughput, and optimizing resource usage.
+- For instance, Alphabet chairman John Hennessy told Reuters in 2023 that “running an LLM request can be 10 times more expensive than a traditional keyword search, potentially leading to billions in additional costs.”
+- 
+
 
 
 
