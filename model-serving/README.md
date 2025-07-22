@@ -59,10 +59,27 @@ Working with a fully managed LLM provider like OpenAI, DeepSeek, or Anthropic, i
 
 ### Why Optimize Model Serving (Especially for LLMs)?
 
+
+
 - Model serving optimization refers to the process for improving the model serving performance, such as reducing serving latency, increasing throughput, and optimizing resource usage.
 - ****** Model serving optimization refers to the process for improving the model serving performance, such as reducing serving latency, increasing throughput, and optimizing resource usage.
 - For instance, Alphabet chairman John Hennessy told Reuters in 2023 that “running an LLM request can be 10 times more expensive than a traditional keyword search, potentially leading to billions in additional costs.”
-- 
+
+Table 1-1. Fundamental differences between model training and serving
+1. Aspect                     	Model Training	                                                                                                     Model Serving
+
+2. Stage in ML Lifecycle      Prepares the model                                                                                                Deploy to production
+
+3. Objective                  Run the model as a process to learn parameters (weights) by minimizing a loss function on the training data.      Run the model to generate prediction (inference) on new input efficiently.
+
+4. Computation                Extremely compute-intensive, involving iterative model weight updates (including backpropagation and gradient updates)    Focused on efficient forward propagation only (no backpropagation)
+
+5. Throughput and Latency      Preferable for high throughput (many samples per second). Large data batches are usually processed in parallel to optimize GPU utilization.   Optimized for low-latency response per request; often operates on single or small batches
+
+5. Resource Requirement         Requires powerful GPUs/TPUs and distributed training frameworks (such as Fully Sharded Data Parallel (FSDP) and DeepSpeed)     Optimized for low-latency, resource-efficient execution, often on CPUs, edge devices, or inference-specific GPUs (such as NVIDIA TensorRT and ONNX
+
+
+**** Instead, adopt model-serving-specific frameworks, such as NVIDIA Triton Inference Server, vLLM (Virtual LLM), and SGLang.
 
 
 
