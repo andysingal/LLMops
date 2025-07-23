@@ -2,3 +2,4 @@
 
 Resource:
 - https://github.com/meta-llama/llama-stack
+- [Deploy ChatQnA on OpenShift with AMD Instinct](https://developers.redhat.com/articles/2025/07/23/deploy-chatqna-openshift-amd-instinct)
