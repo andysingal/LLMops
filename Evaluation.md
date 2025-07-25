@@ -35,6 +35,8 @@
 
 [Evaluating Long-Context Question & Answer Systems](https://eugeneyan.com/writing/qa-evals/?twclid=2-44mq6dobl8i4tvgb8wcu9shwd)
 
+[Mastering LLM Quality: A Key Guide for DeepEval & Red Teaming](https://blog.nashtechglobal.com/mastering-llm-quality-a-key-guide-for-deepeval-red-teaming/)
+
 
 <img width="585" alt="Screenshot 2024-08-22 at 10 30 29 PM" src="https://github.com/user-attachments/assets/15bb43e0-3474-434b-a858-cf5cbbd110d6">
 
