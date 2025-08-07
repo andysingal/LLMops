@@ -21,3 +21,7 @@ A Developer's Guide to Hosting 3B LLM for Millions of Queries in Parallel Whethe
 ## Articles
 
 [Pipeline of Agents Pattern: Building Maintainable AI Workflows with LangGraph](https://vitaliihonchar.com/insights/how-to-build-pipeline-of-agents)
+
+[pipeshub-ai](https://github.com/pipeshub-ai/pipeshub-ai?tab=readme-ov-file)
+
+PipesHub is the workplace AI platform for enterprises to improve how businesses operate and help employees and AI agents work more efficiently. In most companies, important work data is spread across multiple apps like Google Workspace, Microsoft 365, Slack, Jira, Confluence, and more. PipesHub AI helps you quickly find the right information using natural language search—just like Google. It can answer questions, provide insights, and more. The platform not only delivers the most relevant results but also shows where the information came from, with proper citations, using Knowledge Graphs and Page Ranking. Beyond search, our platform allows enterprises to create custom apps and AI agents using a No-Code interface.
