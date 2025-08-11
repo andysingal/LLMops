@@ -8,3 +8,7 @@ SGLang is a model-serving framework that focuses on optimizing the KV cache acro
 
 In existing inference engines, the KV cache for a request is discarded after its own generation is completed and is not reused across multiple calls. If the input prompts of the requests happen to have many common prefixes, recomputing all the KV cache is not efficient and reusing them can vastly reduce the serving latency. So SGLang came up with a feature called RadixAttention, which maintains a LRU cache of the KV cache for all requests within a radix tree; it enables automatic reuse of the KV cache across multiple generation calls efficiently.
 
+[Understanding Episodic Memory in Artificial Intelligence](https://www.digitalocean.com/community/tutorials/episodic-memory-in-ai)
+
+Episodic memory enables artificial agents to remember and retrieve specific events from their past experiences, making them more context-aware and better able to learn from their own history. It provides detailed contextual information, while semantic memory maintains general facts.
+
