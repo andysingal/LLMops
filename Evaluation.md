@@ -37,6 +37,8 @@
 
 [Mastering LLM Quality: A Key Guide for DeepEval & Red Teaming](https://blog.nashtechglobal.com/mastering-llm-quality-a-key-guide-for-deepeval-red-teaming/)
 
+[The Best Platforms for Evaluating AI Models in 2025](https://dev.to/debmckinney/the-best-platforms-for-evaluating-ai-models-in-2025-25ed)
+
 
 <img width="585" alt="Screenshot 2024-08-22 at 10 30 29 PM" src="https://github.com/user-attachments/assets/15bb43e0-3474-434b-a858-cf5cbbd110d6">
 
