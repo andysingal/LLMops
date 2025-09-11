@@ -12,6 +12,9 @@
 
 [Arize-judge](https://github.com/Arize-ai/phoenix/blob/main/tutorials/evals/optimizing_llm_as_a_judge_prompts.ipynb)
 
+
+[langchain-llm-judge](https://github.com/langchain-ai/claude-code-evals/blob/main/task_3/llm_as_a_judge.py)
+
 <img width="1166" alt="Screenshot 2024-11-30 at 6 51 32 PM" src="https://github.com/user-attachments/assets/02a1087a-da9c-4efa-a0b2-3894611b7806">
 
 
