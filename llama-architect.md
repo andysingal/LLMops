@@ -4,6 +4,8 @@ Resource:
 - https://github.com/meta-llama/llama-stack
 - [Deploy ChatQnA on OpenShift with AMD Instinct](https://developers.redhat.com/articles/2025/07/23/deploy-chatqna-openshift-amd-instinct)
 - [Build a MultiModal RAG PDF Q&A System using Cohere, ChromaDB & Gemini with LangChain](https://www.youtube.com/watch?v=FIr06zvftWE)
+- [Automating RCA and Decision Support Using AI Agents](https://dzone.com/articles/automating-rca-and-decision-support-using-ai-agent)
+
 Extract text and images from PDFs using PyMuPDF  
 ✅ Generate text & image embeddings with Cohere's `embed-v4.0` model  
 ✅ Store and retrieve multimodal embeddings using ChromaDB  
