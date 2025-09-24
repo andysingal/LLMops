@@ -19,3 +19,22 @@ An MVP is a powerful strategy because of the following reasons:
 - Idea validation: Test it with real users before investing in the full development of the product
 - Market research: Gain insights into what resonates with the target audience
 - Risk minimization: Reduces the time and resources needed for a product that might not achieve market success
+
+### feature/training/inference (FTI) 
+Building production-ready ML systems is much more than just training a model. From an engineering point of view, training the model is the most straightforward step in most use cases. However, training a model becomes complex when deciding on the correct architecture and hyperparameters. That’s not an engineering problem but a research problem.
+
+At this point, we want to focus on how to design a production-ready architecture. Training a model with high accuracy is extremely valuable, but just by training it on a static dataset, you are far from deploying it robustly. We have to consider how to do the following:
+
+- Ingest, clean, and validate fresh data
+- Training versus inference setups
+- Compute and serve features in the right environment
+- Serve the model in a cost-effective way
+- Version, track, and share the datasets and models
+- Monitor your infrastructure and models
+- Deploy the model on a scalable infrastructure
+- Automate the deployments and training
+
+<img width="687" height="612" alt="Screenshot 2025-09-23 at 11 07 19 PM" src="https://github.com/user-attachments/assets/9cb5774d-9d65-4719-9bf8-c00be3302c51" />
+
+
+
