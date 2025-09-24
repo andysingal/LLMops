@@ -37,4 +37,7 @@ At this point, we want to focus on how to design a production-ready architecture
 <img width="687" height="612" alt="Screenshot 2025-09-23 at 11 07 19 PM" src="https://github.com/user-attachments/assets/9cb5774d-9d65-4719-9bf8-c00be3302c51" />
 
 
+<img width="650" height="586" alt="Screenshot 2025-09-23 at 11 21 09 PM" src="https://github.com/user-attachments/assets/7a3baac5-0aab-4ed0-80fa-e8fa7db06b5b" />
+
+
 
