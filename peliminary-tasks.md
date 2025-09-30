@@ -135,3 +135,15 @@ How do you scale the fine-tuning algorithm on LLMs and datasets of various sizes
 How do you pick an LLM production candidate from multiple experiments?
 How do you test the LLM to decide whether to push it to production or not?
 
+
+
+##### Inference pipeline
+The inference pipeline is the last piece of the puzzle. It is connected to the model registry and logical feature store. It loads a fine-tuned LLM from the model registry, and from the logical feature store, it accesses the vector DB for RAG. It takes in client requests through a REST API as queries. It uses the fine-tuned LLM and access to the vector DB to carry out RAG and answer the queries.
+
+All the client queries, enriched prompts using RAG, and generated answers are sent to a prompt monitoring system to analyze, debug, and better understand the system. Based on specific requirements, the monitoring system can trigger alarms to take action either manually or automatically.
+
+At the interface level, this component follows exactly the FTI architecture, but when zooming in, we can observe unique characteristics of an LLM and RAG system, such as the following:
+
+- A retrieval client used to do vector searches for RAG
+- Prompt templates used to map user queries and external information to LLM inputs
+- Special tools for prompt monitoring
