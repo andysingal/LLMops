@@ -40,5 +40,22 @@ At this point, we want to focus on how to design a production-ready architecture
 <img width="650" height="586" alt="Screenshot 2025-09-23 at 11 21 09 PM" src="https://github.com/user-attachments/assets/7a3baac5-0aab-4ed0-80fa-e8fa7db06b5b" />
 
 
+## ML pipelines
+**** we have the feature, training, and inference pipelines
+<img width="649" height="606" alt="Screenshot 2025-09-29 at 9 26 05 PM" src="https://github.com/user-attachments/assets/3c759dfe-0c93-4f98-8ac4-b85e39285e78" />
 
 
+#### The feature pipeline
+The feature pipeline takes raw data as input, processes it, and outputs the features and labels required by the model for training or inference. Instead of directly passing them to the model, the features and labels are stored inside a feature store. Its responsibility is to store, version, track, and share the features. By saving the features in a feature store, we always have a state of our features. Thus, we can easily send the features to the training and inference pipelines.
+
+As the data is versioned, we can always ensure that the training and inference time features match. Thus, we avoid the training-serving skew problem.
+
+
+#### The training pipeline
+The training pipeline takes the features and labels from the features stored as input and outputs a train model or models. The models are stored in a model registry. Its role is similar to that of feature stores, but this time, the model is the first-class citizen. Thus, the model registry will store, version, track, and share the model with the inference pipeline.
+
+Also, most modern model registries support a metadata store that allows you to specify essential aspects of how the model was trained. The most important are the features, labels, and their version used to train the model. Thus, we will always know what data the model was trained on.
+
+
+#### The inference pipeline
+The inference pipeline takes as input the features and labels from the feature store and the trained model from the model registry. With these two, predictions can be easily made in either batch or real-time mode.
