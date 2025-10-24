@@ -76,3 +76,7 @@ asyncio.run(main())
 
 [Notebooks](https://github.com/mingyin0312/RLFromScratch/tree/main)
 
+
+<img width="732" height="335" alt="Screenshot 2025-10-24 at 2 44 59 PM" src="https://github.com/user-attachments/assets/6221dfa8-9ad0-4ecb-980e-5548c5c0a55a" />
+
+
