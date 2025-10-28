@@ -4,7 +4,45 @@
 - Remote storage (for instance, AWS S3 or Google Cloud Storage buckets)
 - A container registry (for example, Docker Registry or AWS ECR)
 
-Artifact: It is any file(s) produced during the machine learning lifecycle, such as datasets, trained models, checkpoints, or logs.
+Artifact: It is any file(s) produced during the machine learning lifecycle, such as datasets, trained models, checkpoints, or logs.Thus, artifacts have these unique properties: they are versioned, sharable, and have metadata attached to them to understand what’s inside quickly. For example, when wrapping your dataset with an artifact, you can add to its metadata the size of the dataset, the train-test split ratio, the size, types of labels, and anything else useful to understand what’s inside the dataset without actually downloading it.
+
+The metadata is manually added to the artifact, as shown in the code snippet below. Thus, you can precompute and attach to the artifact’s metadata anything you consider helpful for dataset discovery across your business and projects:
+
+```py
+from zenml import ArtifactConfig, get_step_context, step
+@step
+def generate_intruction_dataset(
+    prompts: Annotated[dict[DataCategory, list[GenerateDatasetSamplesPrompt]], "prompts"]) -> Annotated[
+    InstructTrainTestSplit,
+    ArtifactConfig(
+        name="instruct_datasets",
+        tags=["dataset", "instruct", "cleaned"],
+    ),
+]:
+    datasets = … # Generate datasets
+    step_context = get_step_context()
+    step_context.add_output_metadata(output_name="instruct_datasets", metadata=_get_metadata_instruct_dataset(datasets))
+    return datasets
+def _get_metadata_instruct_dataset(datasets: InstructTrainTestSplit) -> dict[str, Any]:
+    instruct_dataset_categories = list(datasets.train.keys())
+    train_num_samples = {
+        category: instruct_dataset.num_samples for category, instruct_dataset in datasets.train.items()
+    }
+    test_num_samples = {category: instruct_dataset.num_samples for category, instruct_dataset in datasets.test.items()}
+    return {
+        "data_categories": instruct_dataset_categories,
+        "test_split_size": datasets.test_split_size,
+        "train_num_samples_per_category": train_num_samples,
+        "test_num_samples_per_category": test_num_samples,
+    }
+```
+Also, you can easily download and access a specific version of the dataset using its Universally Unique Identifier (UUID), which you can find using the ZenML dashboard or CLI:
+```py
+from zenml.client import Client
+artifact = Client().get_artifact_version('8bba35c4-8ff9-4d8f-a039-08046efc9fdc')
+loaded_artifact = artifact.load()
+```
+
 
 
 
