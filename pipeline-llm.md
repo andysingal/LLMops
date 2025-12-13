@@ -25,3 +25,7 @@ A Developer's Guide to Hosting 3B LLM for Millions of Queries in Parallel Whethe
 [pipeshub-ai](https://github.com/pipeshub-ai/pipeshub-ai?tab=readme-ov-file)
 
 PipesHub is the workplace AI platform for enterprises to improve how businesses operate and help employees and AI agents work more efficiently. In most companies, important work data is spread across multiple apps like Google Workspace, Microsoft 365, Slack, Jira, Confluence, and more. PipesHub AI helps you quickly find the right information using natural language search—just like Google. It can answer questions, provide insights, and more. The platform not only delivers the most relevant results but also shows where the information came from, with proper citations, using Knowledge Graphs and Page Ranking. Beyond search, our platform allows enterprises to create custom apps and AI agents using a No-Code interface.
+
+[How to Design a Fully Local Agentic Storytelling Pipeline Using Griptape Workflows, Hugging Face Models, and Modular Creative Task Orchestration](https://www.marktechpost.com/2025/12/12/how-to-design-a-fully-local-agentic-storytelling-pipeline-using-griptape-workflows-hugging-face-models-and-modular-creative-task-orchestration/)
+
+In this tutorial, we build a fully local, API-free agentic storytelling system using Griptape and a lightweight Hugging Face model. We walk through creating an agent with tool-use abilities, generating a fictional world, designing characters, and orchestrating a multi-stage workflow that produces a coherent short story.
