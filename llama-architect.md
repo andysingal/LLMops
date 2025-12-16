@@ -1,5 +1,8 @@
 <img width="682" alt="Screenshot 2024-10-01 at 8 53 53 PM" src="https://github.com/user-attachments/assets/2eecb5ee-c6c2-44a6-ae68-f144737ee1ff">
 
+### Articles
+- [Architecting Data for the AI Era](https://fedresources.com/architecting-data-for-the-ai-era/)
+
 Resource:
 - https://github.com/meta-llama/llama-stack
 - [Deploy ChatQnA on OpenShift with AMD Instinct](https://developers.redhat.com/articles/2025/07/23/deploy-chatqna-openshift-amd-instinct)
