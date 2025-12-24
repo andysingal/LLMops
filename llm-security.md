@@ -11,6 +11,11 @@ Learn how to build a tool-calling AI agent using LangGraph, Vercel AI SDK, and N
 
 LlamaFirewall is an open-source security-focused guardrail framework designed to serve as a final layer of defense against security risks associated with AI agents. Unlike traditional moderation tools that mainly focus on filtering toxic content, LlamaFirewall provides system-level defenses tailored to modern agentic use cases, such as code generation, tool orchestration, and autonomous decision-making. It consists of a set of scanners for different security risks, including PromptGuardScanner, AlignmentCheckScanner, CodeShieldScanner, and customizable regex filters.
 
+Decepticon - Vibe Hacking Agent: [Vibe Hacking](https://github.com/PurpleAILAB/Decepticon/) is a new paradigm in Offensive Security defined by PurpleAILAB.
+
+Unlike traditional red teaming methods that rely on manual execution, AI agents autonomously perform red teaming tasks in Vibe Hacking.
+
+
 
 ## Few things to remember
 
