@@ -3,6 +3,8 @@
 ### Articles
 - [Architecting Data for the AI Era](https://fedresources.com/architecting-data-for-the-ai-era/)
 - [End-to-End Modular LLM Application Architecture](https://dzone.com/articles/llm-architecture-patterns-rag-to-agentic)
+- [RAG-Architecture](https://deepcom.co.jp/rag-quality-guide-qa-generation/)
+
 
 
 
