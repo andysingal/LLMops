@@ -452,5 +452,10 @@ Best,
 ```
 This is the moment where the LLM stops being a “note-taker” and becomes a creative partner, as we mentioned at the start of this chapter. In this use case, we didn’t just get a summary. We witnessed how to think with the AI as a partner. The human remains at the center of the process and can create templates of context chaining for meetings, email processing, reporting, and anything you can imagine. Used well, context chaining can elevate the way teams, companies, and clients operate.
 
+## Reference:
+- [Agentic AI and Security](https://martinfowler.com/articles/agentic-ai-security.html)
+
+<img width="573" height="666" alt="Screenshot 2026-02-14 at 8 50 28 AM" src="https://github.com/user-attachments/assets/4bc8fc32-1239-4f86-9528-15fbdfba6bd6" />
+
 
 
