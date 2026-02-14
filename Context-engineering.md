@@ -343,3 +343,114 @@ The output shows how an LLM can function as a creative collaborator, proposing
 ```
 
 <h2>Layer 3: Determining the action (the “what next”</h2>
+
+The next step is to compile everything into a structured, final summary.
+
+This serves two purposes:
+
+It forces clarity since every item is reduced to topic, outcome, and owner.
+It makes information reusable. Whether dropped into an email, report, or dashboard, the summary is clean and immediately actionable.
+
+```
+# Cell 8: g6 - Creating the Final, Structured Summary
+prompt_g6 = f"""
+Task: Create a final, concise summary of the meeting in a markdown table.
+Use the following information to construct the table.
+
+- New Developments: {new_developments}
+
+The table should have three columns: "Topic", "Decision/Outcome", and "Owner".
+"""
+try:
+    response_g6 = client.chat.completions.create(
+        model="gpt-5",
+        messages=[{"role": "user", "content": prompt_g6}]
+    )
+    final_summary_table = response_g6.choices[0].message.content
+    print("--- FINAL MEETING SUMMARY TABLE ---")
+    print(final_summary_table)
+except Exception as e:
+    print(f"An error occurred: {e}")
+```
+
+```
+--- FINAL MEETING SUMMARY TABLE ---
+| Topic | Decision/Outcome | Owner |
+|---|---|---|
+| Backend payment gateway integration | More complex than expected; requires an additional three days | Backend Team |
+| Schedule impact | Extra three days compress final testing, reducing buffer before launch | Project Manager |
+| Mitigation | Tentative plan: Tom will work over the weekend to catch up | Tom |
+| Front-end status | Ahead of schedule with extra bandwidth available | Front-end Team |
+| Launch/marketing plan | Shift to a one-week invite-only soft launch, then major day-one push | Marketing + Product |
+```
+
+- The final step in context chaining is to close the loop from insight to action: turning the structured analysis into a professional follow-up email:
+
+```
+# Cell 9: g7 - Drafting the Follow-Up Action
+prompt_g7 = f"""
+Task: Based on the following summary table, draft a polite and professional follow-up email to the team (Sarah, Tom, Maria).
+The email should clearly state the decisions made and the action items for each person.
+
+Summary Table:
+---
+{final_summary_table}
+---
+"""
+```
+
+```
+try:
+    response_g7 = client.chat.completions.create(
+        model="gpt-5",
+        messages=[{"role": "user", "content": prompt_g7}]
+    )
+    follow_up_email = response_g7.choices[0].message.content
+    print("--- DRAFT FOLLOW-UP EMAIL ---")
+    print(follow_up_email)
+except Exception as e:
+    print(f"An error occurred: {e}")
+```
+
+```
+--- DRAFT FOLLOW-UP EMAIL ---
+Subject: Follow-up: Decisions and next steps from today's sync
+
+Hi Sarah, Tom, and Maria,
+
+Thanks for the productive discussion earlier. Here's a quick recap of decisions and the action items for each of us.
+
+Decisions
+- Backend payment gateway integration is more complex than expected and will require an additional three days.
+- This pushes the schedule by three days and compresses the final testing window, reducing our pre-launch buffer.
+- Mitigation: Tom will work over the weekend to help us catch up.
+- Front-end is ahead of schedule and has extra bandwidth to support.
+- Launch/marketing plan will shift to a one-week invite-only soft launch, followed by the larger day-one push.
+
+Action items
+- Tom:
+  - Confirm weekend availability and share a brief plan (key milestones, dependencies, and any risks).
+  - Proceed with the gateway integration and coordinate early integration testing with Front-end and QA.
+  - Provide short daily progress updates and flag blockers immediately.
+
+- Sarah:
+  - Update the project timeline to reflect the three-day shift and the compressed QA window.
+  - Coordinate with QA on a risk-based test plan that fits the shortened testing period.
+  - Align with Marketing/Product on the invite-only soft launch scope, success metrics, and comms; circulate the plan to the team.
+
+- Maria:
+  - Reallocate Front-end bandwidth to support the backend integration (payment UI hooks, error handling, instrumentation).
+  - Partner with Tom on mocks/stubs as needed to unblock early integration and QA.
+  - Ensure front-end readiness for the soft launch (feature flags/toggles, tracking) and share any gaps.
+
+Please reply to confirm your action items and note any constraints or support you need. I'm happy to set up a brief daily check-in while we work through this; propose a time if you have a preference.
+
+Thanks all, and appreciate the quick coordination.
+
+Best,
+[Your Name]
+```
+This is the moment where the LLM stops being a “note-taker” and becomes a creative partner, as we mentioned at the start of this chapter. In this use case, we didn’t just get a summary. We witnessed how to think with the AI as a partner. The human remains at the center of the process and can create templates of context chaining for meetings, email processing, reporting, and anything you can imagine. Used well, context chaining can elevate the way teams, companies, and clients operate.
+
+
+
