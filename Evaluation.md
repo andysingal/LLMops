@@ -26,6 +26,10 @@
 
 [arena-hard-auto](https://github.com/lmarena/arena-hard-auto)
 
+[WebCode: Search Evals for Coding Agents](https://exa.ai/blog/webcode)
+
+
+
 
 ### Article
 
