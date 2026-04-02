@@ -1,5 +1,5 @@
 Harness engineering is about building a complete working environment around the model so it produces reliable results. It's not about writing better prompts. It's about designing the system the model operates inside.
-
+```
     ┌─────────────────────────────────────────────────────────────────┐
     │                        THE HARNESS                              │
     │                                                                 │
@@ -49,4 +49,10 @@ Harness engineering is about building a complete working environment around the 
     Result: you spend more time                  Result: agent does the work,
             cleaning up than if you                      you verify the result
             did it yourself
+
+```
+
     
+    
+ ## articles
+[Meta-Harness - Automated model harness optimization, explained clearly](https://x.com/neural_avb/status/2039709486538260583)
