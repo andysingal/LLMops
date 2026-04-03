@@ -56,3 +56,5 @@ Harness engineering is about building a complete working environment around the 
     
  ## articles
 [Meta-Harness - Automated model harness optimization, explained clearly](https://x.com/neural_avb/status/2039709486538260583)
+
+[Harness_training_loop](https://x.com/Vtrivedy10/status/2039872562662941118)
