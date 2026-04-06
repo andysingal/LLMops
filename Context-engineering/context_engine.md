@@ -9,4 +9,6 @@ Context Engine employs a two-phase process:
 - First, a Planner acts as the strategic core, reasoning about the user's goal in using the Agent Registry as a "toolkit" of available capabilities to select the best agent or function. We will thus build these new additional Planner and Agent Registry tools in this chapter.
 - Then, the Planner uses an LLM to generate a dynamic, step-by-step execution plan tailored to the specific task. Once the plan is ready, it is handed off to an Executor, the operational manager who invokes the specialist agents in the correct sequence.
 
+
+
 <img width="532" height="468" alt="Screenshot 2026-04-02 at 3 48 00 PM" src="https://github.com/user-attachments/assets/81a58a7a-8147-436e-a16d-debfb1ebac60" />
