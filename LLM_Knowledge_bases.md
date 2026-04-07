@@ -9,3 +9,7 @@
 [New Video: Obsidian + Karpathy = 95% Cheaper “RAG” in Claude Code](https://www.skool.com/ai-automation-society/new-video-obsidian-karpathy-95-cheaper-rag-in-claude-code?p=05c35a3d)
 
 [llm-wiki-agent](https://github.com/SamurAIGPT/llm-wiki-agent)
+
+[claude-memory-compiler](https://github.com/coleam00/claude-memory-compiler)
+Adapted from Karpathy's LLM Knowledge Base architecture, but instead of clipping web articles, the raw data is your own conversations with Claude Code. When a session ends (or auto-compacts mid-session), Claude Code hooks capture the conversation transcript and spawn a background process that uses the Claude Agent SDK to extract the important stuff - decisions, lessons learned, patterns, gotchas - and appends it to a daily log. You then compile those daily logs into structured, cross-referenced knowledge articles organized by concept. Retrieval uses a simple index file instead of RAG - no vector database, no embeddings, just markdown.
+
