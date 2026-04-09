@@ -60,3 +60,5 @@ Harness engineering is about building a complete working environment around the 
 [Harness_training_loop](https://x.com/Vtrivedy10/status/2039872562662941118)
 
 [12 Agentic Harness Patterns from Claude Code](https://generativeprogrammer.com/p/12-agentic-harness-patterns-from)
+
+[Better Harness: A Recipe for Harness Hill-Climbing with Evals](https://x.com/Vtrivedy10/status/2041927488918413589)
