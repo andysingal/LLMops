@@ -78,3 +78,8 @@ Harness engineering is about building a complete working environment around the 
 
 
 
+<img width="555" height="299" alt="Screenshot 2026-04-10 at 12 12 02 PM" src="https://github.com/user-attachments/assets/411bd304-1a71-4e7c-8509-135e724d2907" />
+
+
+
+
