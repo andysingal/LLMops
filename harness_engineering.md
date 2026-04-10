@@ -62,3 +62,14 @@ Harness engineering is about building a complete working environment around the 
 [12 Agentic Harness Patterns from Claude Code](https://generativeprogrammer.com/p/12-agentic-harness-patterns-from)
 
 [Better Harness: A Recipe for Harness Hill-Climbing with Evals](https://x.com/Vtrivedy10/status/2041927488918413589)
+
+[Claude Managed Agents: get to production 10x faster](https://claude.com/blog/claude-managed-agents)
+
+<img width="708" height="678" alt="Screenshot 2026-04-10 at 9 38 03 AM" src="https://github.com/user-attachments/assets/6c226a43-057b-47b0-9165-6bf4d5e95df2" />
+
+<img width="643" height="595" alt="Screenshot 2026-04-10 at 9 34 23 AM" src="https://github.com/user-attachments/assets/5e2afc97-75b1-4a43-808c-2fdd4bd2e21f" />
+
+[source_1](https://levelup.gitconnected.com/agent-harness-is-just-system-design-with-a-new-name-d91be4a648c5)
+
+
+
