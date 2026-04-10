@@ -13,5 +13,30 @@
 [claude-memory-compiler](https://github.com/coleam00/claude-memory-compiler)
 Adapted from Karpathy's LLM Knowledge Base architecture, but instead of clipping web articles, the raw data is your own conversations with Claude Code. When a session ends (or auto-compacts mid-session), Claude Code hooks capture the conversation transcript and spawn a background process that uses the Claude Agent SDK to extract the important stuff - decisions, lessons learned, patterns, gotchas - and appends it to a daily log. You then compile those daily logs into structured, cross-referenced knowledge articles organized by concept. Retrieval uses a simple index file instead of RAG - no vector database, no embeddings, just markdown.
 
+[memoriki](https://github.com/AyanbekDos/memoriki)
+Personal knowledge base with real memory. Combines LLM Wiki (Andrej Karpathy) + MemPalace (MCP server).
+
+Wiki gives structure. MemPalace gives memory.
+
+```
+# 1. Clone
+git clone https://github.com/AyanbekDos/memoriki.git my-knowledge-base
+cd my-knowledge-base
+
+# 2. Install MemPalace
+pip install mempalace
+mempalace init .
+
+# 3. Connect MemPalace to Claude Code
+claude mcp add mempalace -- python -m mempalace.mcp_server
+
+# 4. Drop your first source
+cp ~/some-article.md raw/
+
+# 5. Launch Claude Code and start ingesting
+claude
+# > Read raw/some-article.md and ingest it into the wiki
+```
+
 ## Articles
 [When Your AI Wiki Outgrows the Context Window — A Practical Guide to RAG](https://dev.to/zaferdace/when-your-ai-wiki-outgrows-the-context-window-a-practical-guide-to-rag-kc2)
