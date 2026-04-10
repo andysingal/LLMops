@@ -72,4 +72,9 @@ Harness engineering is about building a complete working environment around the 
 [source_1](https://levelup.gitconnected.com/agent-harness-is-just-system-design-with-a-new-name-d91be4a648c5)
 
 
+<img width="628" height="700" alt="Screenshot 2026-04-10 at 10 44 52 AM" src="https://github.com/user-attachments/assets/9f8da31c-edbd-42c5-86a1-1c088069a23c" />
+
+[source_2](https://x.com/akshay_pachaar/status/2042586319390674994/photo/1)
+
+
 
