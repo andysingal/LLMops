@@ -63,6 +63,11 @@ Harness engineering is about building a complete working environment around the 
 
 [Better Harness: A Recipe for Harness Hill-Climbing with Evals](https://x.com/Vtrivedy10/status/2041927488918413589)
 
+[Your harness, your memory](https://x.com/hwchase17/status/2042978500567609738)
+
+<img width="551" height="426" alt="Screenshot 2026-04-11 at 5 40 04 PM" src="https://github.com/user-attachments/assets/639531fd-3436-46fa-ad12-c726bf2044a2" />
+
+
 [Claude Managed Agents: get to production 10x faster](https://claude.com/blog/claude-managed-agents)
 
 <img width="708" height="678" alt="Screenshot 2026-04-10 at 9 38 03 AM" src="https://github.com/user-attachments/assets/6c226a43-057b-47b0-9165-6bf4d5e95df2" />
