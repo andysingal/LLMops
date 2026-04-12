@@ -40,3 +40,5 @@ claude
 
 ## Articles
 [When Your AI Wiki Outgrows the Context Window — A Practical Guide to RAG](https://dev.to/zaferdace/when-your-ai-wiki-outgrows-the-context-window-a-practical-guide-to-rag-kc2)
+
+[Schema-First Extraction for LLM Wikis with GLiNER2](https://blog.veristamp.in/blog/schema-first-llm-wiki/?fbclid=IwY2xjawRJDDZleHRuA2FlbQIxMABicmlkETFGRmZheEtWanlra1pEVWpYc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHgp5i7fflHMhlgIDqdgiw_SkxfVVrdMWV2Mi_gy2Y6FaTXUG94onQz0-TyNT_aem_F3OzrCi9FoQR0iL7-Nrm1Q)
