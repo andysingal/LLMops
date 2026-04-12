@@ -41,3 +41,6 @@ Hallucinations --> Creative storytellers
 
 ## Articles
 [Guardrails as Architecture: Safe guarding GenAI apps](https://dev.to/arbitrarybytes/guardrails-as-architecture-safe-guarding-genai-apps-46pd)
+
+[How to red team LLM Agents](https://www.promptfoo.dev/docs/red-team/agents/)
+
