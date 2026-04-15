@@ -94,3 +94,15 @@ Harness engineering is about building a complete working environment around the 
 Meta-Harness is a framework for automated search over task-specific model harnesses: the code around a fixed base model that decides what to store, retrieve, and show while the model works.
 
 [EvoForge: Scaling Evolutionary Harness Optimization](https://x.com/leonardtang_/status/2044426476632629545)
+
+[Resolvers: The Routing Table for Intelligence](https://x.com/garrytan/status/2044479509874020852)
+A resolver is a routing table for context. When task type X appears, load document Y first. That's it. One sentence.
+
+
+
+[Hermes Agent Stack](https://www.reddit.com/r/hermesagent/comments/1sj8hyw/llm_cheatsheet_for_hermes_agent/#lightbox)
+
+<img width="1123" height="716" alt="Screenshot 2026-04-15 at 5 16 27 PM" src="https://github.com/user-attachments/assets/7ae60455-ea8a-4a52-84ed-783d7b4639db" />
+
+
+
