@@ -87,4 +87,8 @@ Harness engineering is about building a complete working environment around the 
 
 
 
+[Meta-harness](https://github.com/stanford-iris-lab/meta-harness)
 
+<img width="4744" height="1384" alt="repo" src="https://github.com/user-attachments/assets/2e6adfc9-3b3e-4b7d-a925-146fda77984a" />
+
+Meta-Harness is a framework for automated search over task-specific model harnesses: the code around a fixed base model that decides what to store, retrieve, and show while the model works.
