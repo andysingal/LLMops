@@ -13,6 +13,40 @@
 [claude-memory-compiler](https://github.com/coleam00/claude-memory-compiler)
 Adapted from Karpathy's LLM Knowledge Base architecture, but instead of clipping web articles, the raw data is your own conversations with Claude Code. When a session ends (or auto-compacts mid-session), Claude Code hooks capture the conversation transcript and spawn a background process that uses the Claude Agent SDK to extract the important stuff - decisions, lessons learned, patterns, gotchas - and appends it to a daily log. You then compile those daily logs into structured, cross-referenced knowledge articles organized by concept. Retrieval uses a simple index file instead of RAG - no vector database, no embeddings, just markdown.
 
+
+[AI Knowledge Layer (and why your agents are useless without it)](https://x.com/shannholmberg/status/2044111115878326444)
+
+<img width="522" height="548" alt="Screenshot 2026-04-15 at 1 01 13 PM" src="https://github.com/user-attachments/assets/7f7dbcd4-1d4a-4ef1-89da-f37809352e1e" />
+
++-------------------------------------------------------+
+|                    YOUR AGENTS                         |
+|  (writer, researcher, strategist, analyst)             |
++---------------------------+---------------------------+
+      |  reads from                  |  reads from
+      v                              v
++------------------+   +-------------------+
+|  KNOWLEDGE BASE  |   | BRAND FOUNDATION  |
+|  LAYER (KBL)     |   | (BF)              |
+|                  |   |                   |
+|  dynamic         |   |  static           |
+|  agent-maintained|   |  human-edited     |
+|  grows over time |   |  your voice, your |
+|  wiki pages,     |   |  rules, your      |
+|  sources, index  |   |  positioning      |
++--------+---------+   +-------------------+
+      |
+compiles from
+      |
++--------+---------+
+|     raw/ inbox    |
+|  tweets, articles |
+|  bookmarks, PDFs  |
+|  notes, ideas     |
++-------------------+
+
+
+
+
 [memoriki](https://github.com/AyanbekDos/memoriki)
 Personal knowledge base with real memory. Combines LLM Wiki (Andrej Karpathy) + MemPalace (MCP server).
 
