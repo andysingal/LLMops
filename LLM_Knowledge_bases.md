@@ -78,3 +78,7 @@ claude
 [Schema-First Extraction for LLM Wikis with GLiNER2](https://blog.veristamp.in/blog/schema-first-llm-wiki/?fbclid=IwY2xjawRJDDZleHRuA2FlbQIxMABicmlkETFGRmZheEtWanlra1pEVWpYc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHgp5i7fflHMhlgIDqdgiw_SkxfVVrdMWV2Mi_gy2Y6FaTXUG94onQz0-TyNT_aem_F3OzrCi9FoQR0iL7-Nrm1Q)
 
 [LLM_Wiki_v2](https://gist.github.com/rohitg00/2067ab416f7bbe447c1977edaaa681e2)
+
+[llm_wiki](https://github.com/nashsu/llm_wiki)
+A personal knowledge base that builds itself.
+LLM reads your documents, builds a structured wiki, and keeps it current.
