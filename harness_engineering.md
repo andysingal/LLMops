@@ -106,3 +106,9 @@ A resolver is a routing table for context. When task type X appears, load docume
 
 
 
+
+### Articles 
+[Harnesses are everything. Here's how to optimize yours](https://x.com/thealexker/status/2045203785304232162)
+
+<img width="1241" height="480" alt="Screenshot 2026-04-18 at 11 35 34 AM" src="https://github.com/user-attachments/assets/fd651adc-3fb4-4cb7-b379-e13ab0514f7b" />
+
