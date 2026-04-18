@@ -82,6 +82,8 @@ claude
 
 [LLM_Wiki_v2](https://gist.github.com/rohitg00/2067ab416f7bbe447c1977edaaa681e2)
 
+[swarmvault](https://github.com/swarmclawai/swarmvault)
+
 [llm_wiki](https://github.com/nashsu/llm_wiki)
 A personal knowledge base that builds itself.
 LLM reads your documents, builds a structured wiki, and keeps it current.
