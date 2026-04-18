@@ -95,6 +95,7 @@ LLM reads your documents, builds a structured wiki, and keeps it current.
 
 OpenKB (Open Knowledge Base) is an open-source system (in CLI) that compiles raw documents into a structured, interlinked wiki-style knowledge base using LLMs, powered by PageIndex for vectorless long document retrieval.
 
+```
 raw/                              You drop files here
  │
  ├─ Short docs ──→ markitdown ──→ LLM reads full text
@@ -114,5 +115,5 @@ wiki/
  ├── concepts/           Cross-document synthesis ← the good stuff
  ├── explorations/       Saved query results
  └── reports/            Lint reports
-
+```
  
