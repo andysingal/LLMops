@@ -87,3 +87,32 @@ claude
 [llm_wiki](https://github.com/nashsu/llm_wiki)
 A personal knowledge base that builds itself.
 LLM reads your documents, builds a structured wiki, and keeps it current.
+
+
+
+##### Useful repos
+[OpenKB — Open LLM Knowledge Base](https://github.com/VectifyAI/OpenKB)
+
+OpenKB (Open Knowledge Base) is an open-source system (in CLI) that compiles raw documents into a structured, interlinked wiki-style knowledge base using LLMs, powered by PageIndex for vectorless long document retrieval.
+
+raw/                              You drop files here
+ │
+ ├─ Short docs ──→ markitdown ──→ LLM reads full text
+ │                                     │
+ ├─ Long PDFs ──→ PageIndex ────→ LLM reads document trees
+ │                                     │
+ │                                     ▼
+ │                         Wiki Compilation (using LLM)
+ │                                     │
+ ▼                                     ▼
+wiki/
+ ├── index.md            Knowledge base overview
+ ├── log.md              Operations timeline
+ ├── AGENTS.md           Wiki schema (LLM instructions)
+ ├── sources/            Full-text conversions
+ ├── summaries/          Per-document summaries
+ ├── concepts/           Cross-document synthesis ← the good stuff
+ ├── explorations/       Saved query results
+ └── reports/            Lint reports
+
+ 
