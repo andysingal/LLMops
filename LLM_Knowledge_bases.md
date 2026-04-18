@@ -72,6 +72,9 @@ claude
 # > Read raw/some-article.md and ingest it into the wiki
 ```
 
+<img width="579" height="686" alt="Screenshot 2026-04-18 at 6 10 04 AM" src="https://github.com/user-attachments/assets/f6c5ae9e-9265-4cf1-87fa-02f932b845d2" />
+
+
 ## Articles
 [When Your AI Wiki Outgrows the Context Window — A Practical Guide to RAG](https://dev.to/zaferdace/when-your-ai-wiki-outgrows-the-context-window-a-practical-guide-to-rag-kc2)
 
