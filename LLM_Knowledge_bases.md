@@ -116,4 +116,10 @@ wiki/
  ├── explorations/       Saved query results
  └── reports/            Lint reports
 ```
- 
+ [obsidian-llm-wiki](https://github.com/kytmanov/obsidian-llm-wiki-local)
+
+ Turn your raw notes into a self-improving, interlinked wiki — powered by a local LLM.
+
+Drop a markdown file into a folder. The pipeline reads it, extracts concepts, and creates or updates wiki articles with the new knowledge. Reject a draft and explain why — the next compile addresses your feedback. Over time your wiki compounds: every note you add (and every draft you review) makes the whole smarter.
+
+Local-first, provider-flexible. Runs 100% locally with Ollama by default. Also works with any OpenAI-compatible endpoint — Groq, Together AI, LM Studio, vLLM, Azure OpenAI, and more.
