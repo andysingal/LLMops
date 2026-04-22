@@ -43,6 +43,14 @@ async def main():
     messages = await synapse.inject(messages)
 
     # When context gets full, compress with GraphCompactor
+```
+[OpenViking](https://github.com/volcengine/OpenViking)
+
+OpenViking is an open-source Context Database designed specifically for AI Agents.
+
+We aim to define a minimalist context interaction paradigm for Agents, allowing developers to completely say goodbye to the hassle of context management. OpenViking abandons the fragmented vector storage model of traditional RAG and innovatively adopts a "file system paradigm" to unify the structured organization of memories, resources, and skills needed by Agents.
+
+
     compactor = GraphCompactor(llm_client=MyLLMClient())
     result = await compactor.compress(messages)
     messages = result["compressed_messages"]
