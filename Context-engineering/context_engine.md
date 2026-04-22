@@ -29,3 +29,121 @@ The second phase is execution, where the Executor coordinates the green Speciali
 - The Researcher performs factual RAG to gather and synthesize relevant information.
 - The Writer combines style and facts to produce the final content.
 
+
+*** Each of these agents interacts with external services. The Librarian and Researcher query the Vector DB, while the Researcher and Writer may call the LLM to refine facts or generate text.
+
+This standardization is what enables context chaining. Each agent receives an MCP message as input and returns another as output, allowing the Executor to simply pass along the data without worrying about translation or formatting. This seamless flow of information is what makes stateful, multi-step reasoning possible and is the foundation upon which the entire engine operates.
+
+
+
+
+The second phase is execution, where the Executor coordinates the green Specialist Agents and external red services. Following the plan step by step, it calls on the following:
+
+- The Librarian handles procedural RAG to fetch stylistic blueprints.
+- The Researcher performs factual RAG to gather and synthesize relevant information.
+
+
+###### Context Librarian agent
+
+```
+ === 4.1. Context Librarian Agent (Procedural RAG) ===
+def agent_context_librarian(mcp_message):
+    """
+    Retrieves the appropriate Semantic Blueprint from the Context Library.
+    """
+    print("\n[Librarian] Activated. Analyzing intent...")
+    # Extract the specific input required by this agent
+    requested_intent = mcp_message['content'].get('intent_query')
+
+    if not requested_intent:
+        raise ValueError("Librarian requires 'intent_query' in the input content.")
+
+    # Query Pinecone Context Namespace
+    results = query_pinecone(requested_intent, NAMESPACE_CONTEXT, top_k=1)
+
+    if results:
+        match = results[0]
+        print(f"[Librarian] Found blueprint '{match['id']}' (Score: {match['score']:.2f})")
+        # Retrieve the blueprint JSON string stored in metadata
+        blueprint_json = match['metadata']['blueprint_json']
+        # The output content IS the blueprint itself (as a string)
+        content = blueprint_json
+    else:
+        print("[Librarian] No specific blueprint found. Returning default.")
+        # Fallback default
+        content = json.dumps({"instruction": "Generate the content neutrally."})
+
+    return create_mcp_message("Librarian", content)
+```
+
+##### === 4.2. Researcher Agent (Factual RAG) ===
+```
+def agent_researcher(mcp_message):
+    """
+    Retrieves and synthesizes factual information from the Knowledge Base.
+    """
+    print("\n[Researcher] Activated. Investigating topic...")
+    # Extract the specific input required by this agent
+    topic = mcp_message['content'].get('topic_query')
+
+    if not topic:
+        raise ValueError("Researcher requires 'topic_query' in the input content.")
+
+    # Query Pinecone Knowledge Namespace
+    results = query_pinecone(topic, NAMESPACE_KNOWLEDGE, top_k=3)
+
+    if not results:
+        print("[Researcher] No relevant information found.")
+        # Return a string indicating no data found
+        return create_mcp_message("Researcher", "No data found on the topic.")
+
+    # Synthesize the findings (Retrieve-and-Synthesize)
+    print(f"[Researcher] Found {len(results)} relevant chunks. Synthesizing...")
+    source_texts = [match['metadata']['text'] for match in results]
+
+    system_prompt = """You are an expert research synthesis AI.
+    Synthesize the provided source texts into a concise, bullet-pointed summary relevant to the user's topic. Focus strictly on the facts provided in the sources. Do not add outside information."""
+
+    user_prompt = f"Topic: {topic}\n\nSources:\n" + "\n\n---\n\n".join(source_texts)
+
+    # Use a low temperature for factual synthesis
+    findings = call_llm_robust(system_prompt, user_prompt)
+
+    # The output content IS the findings (as a string)
+    return create_mcp_message("Researcher", findings)
+
+```
+
+#### # === 4.3. Writer Agent (Generation) ===
+```
+def agent_writer(mcp_message):
+    """
+    Combines the factual research with the semantic blueprint to generate the final output.
+    Crucially enhanced to handle either raw facts OR previous content for rewriting tasks.
+    """
+    print("\n[Writer] Activated. Applying blueprint to source material...")
+
+    # Extract inputs.
+    blueprint_json_string = mcp_message['content'].get('blueprint')
+    # Check for 'facts' first, then 'previous_content'
+    facts = mcp_message['content'].get('facts')
+    previous_content = mcp_message['content'].get('previous_content')
+
+    if not blueprint_json_string:
+         raise ValueError("Writer requires 'blueprint' in the input content.")
+
+    # Determine the source material and label for the prompt
+    if facts:
+        source_material = facts
+        source_label = "RESEARCH FINDINGS"
+    elif previous_content:
+        source_material = previous_content
+        source_label = "PREVIOUS CONTENT (For Rewriting)"
+    else:
+        raise ValueError("Writer requires either 'facts' or 'previous_content'.")
+
+```
+
+
+- The Writer combines style and facts to produce the final content.
+
