@@ -15,7 +15,45 @@ Decepticon - Vibe Hacking Agent: [Vibe Hacking](https://github.com/PurpleAILAB/D
 
 Unlike traditional red teaming methods that rely on manual execution, AI agents autonomously perform red teaming tasks in Vibe Hacking.
 
+[defenseclaw](https://github.com/cisco-ai-defense/defenseclaw)
 
+Large language model agents — like those built on OpenClaw — can install skills, call MCP servers, execute code, and reach the network. Every one of those actions is an attack surface. A single malicious skill can exfiltrate data. A compromised MCP server can inject hidden instructions. Generated code can contain hardcoded secrets or command injection.
+
+DefenseClaw is the enterprise governance layer for OpenClaw. It sits between your AI agents and the infrastructure they run on, enforcing a simple principle: nothing runs until it's scanned, and anything dangerous is blocked automatically.
+```
+┌─────────────────────────────────────────────────────────┐
+│                       DefenseClaw                       │
+│                                                         │
+│  ┌───────────┐   ┌───────────────────────────────────┐  │
+│  │           │   │       DefenseClaw Gateway         │  │
+│  │    CLI    │   │                                   │  │
+│  │  (Python) │   │  ┌─────────────────────────────┐  │  │
+│  │           │   │  │        AI Gateway           │  │  │
+│  │           │   │  └─────────────────────────────┘  │  │
+│  │           │   │  ┌─────────────────────────────┐  │  │
+│  │           │   │  │      Inspect Engine         │  │  │
+│  │           │   │  └─────────────────────────────┘  │  │
+│  │           │   │                                   │  │
+│  └───────────┘   └─────────────────┬─────────────────┘  │
+│                                    │                    │
+│                           WS (v3) + REST                │
+│                                    │                    │
+│  ┌─────────────────────────────────┼─────────────────┐  │
+│  │         NVIDIA OpenShell        │                 │  │
+│  │                                 │                 │  │
+│  │  ┌──────────────────────────────┴──────────────┐  │  │
+│  │  │                  OpenClaw                   │  │  │
+│  │  │                                             │  │  │
+│  │  │  ┌───────────────────────────────────────┐  │  │  │
+│  │  │  │     DefenseClaw Plugin (TS)           │  │  │  │
+│  │  │  └───────────────────────────────────────┘  │  │  │
+│  │  │                                             │  │  │
+│  │  └─────────────────────────────────────────────┘  │  │
+│  │                                                   │  │
+│  └───────────────────────────────────────────────────┘  │
+│                                                         │
+└─────────────────────────────────────────────────────────┘
+```
 
 ## Few things to remember
 
