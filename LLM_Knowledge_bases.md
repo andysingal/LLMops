@@ -123,3 +123,11 @@ wiki/
 Drop a markdown file into a folder. The pipeline reads it, extracts concepts, and creates or updates wiki articles with the new knowledge. Reject a draft and explain why — the next compile addresses your feedback. Over time your wiki compounds: every note you add (and every draft you review) makes the whole smarter.
 
 Local-first, provider-flexible. Runs 100% locally with Ollama by default. Also works with any OpenAI-compatible endpoint — Groq, Together AI, LM Studio, vLLM, Azure OpenAI, and more.
+
+[OmegaWiki](https://github.com/skyllwt/OmegaWiki)
+
+Andrej Karpathy proposed LLM-Wiki: an LLM that builds and maintains a persistent, structured wiki from your sources — not a throwaway RAG answer, but compounding knowledge that grows smarter with every paper you feed it.
+
+ΩmegaWiki takes that idea and runs the full distance. It's not just a wiki builder — it's a complete research lifecycle platform: from paper ingestion → knowledge graph → gap detection → idea generation → experiment design → paper writing → peer review response. All driven by 24 Claude Code skills, all centered on one wiki as the single source of truth.
+
+Drop your .tex / .pdf files in a folder. Run one command. Get a fully cross-referenced knowledge base — and then use it to generate novel research ideas, design experiments, write papers, and respond to reviewers.
