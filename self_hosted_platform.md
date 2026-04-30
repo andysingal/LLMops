@@ -10,3 +10,5 @@ Station gives you:
 - ✅ One-Command Deploy - Push to production with stn deploy
 - ✅ Full Observability - Jaeger traces for every execution
 - ✅ Self-Hosted - Your data, your infrastructure, your control
+
+[How to Self-Host Your AI Stack Without OpenAI](https://www.ayautomate.com/blog/self-host-ai-stack-without-openai)
