@@ -131,3 +131,11 @@ Andrej Karpathy proposed LLM-Wiki: an LLM that builds and maintains a persistent
 ΩmegaWiki takes that idea and runs the full distance. It's not just a wiki builder — it's a complete research lifecycle platform: from paper ingestion → knowledge graph → gap detection → idea generation → experiment design → paper writing → peer review response. All driven by 24 Claude Code skills, all centered on one wiki as the single source of truth.
 
 Drop your .tex / .pdf files in a folder. Run one command. Get a fully cross-referenced knowledge base — and then use it to generate novel research ideas, design experiments, write papers, and respond to reviewers.
+
+
+
+####LLM Brain 
+
+[meg_brain_decoding_neuralset_cnn_Marktechpost](https://www.marktechpost.com/2026/05/01/a-coding-implementation-of-end-to-end-brain-decoding-from-meg-signals-using-neuralset-and-deep-learning-for-predicting-linguistic-features/)
+
+
