@@ -14,3 +14,17 @@ file
 4. Run a task:
 node index.js --task "Find the cheapest flights from NYC to London next Friday"
 ```
+[donutbrowser](https://github.com/zhom/donutbrowser)
+
+- Unlimited browser profiles — each fully isolated with its own fingerprint, cookies, extensions, and data
+- Chromium & Firefox engines — Chromium powered by Wayfern, Firefox powered by Camoufox, both with advanced fingerprint spoofing
+- Proxy support — HTTP, HTTPS, SOCKS4, SOCKS5 per profile, with dynamic proxy URLs
+- VPN support — WireGuard configs per profile
+- Local API & MCP — REST API and Model Context Protocol server for integration with Claude, automation tools, and custom workflows
+- Profile groups — organize profiles and apply bulk settings
+- Import profiles — migrate from Chrome, Firefox, Edge, Brave, or other Chromium browsers
+- Cookie & extension management — import/export cookies, manage extensions per profile
+- Default browser — set Donut as your default browser and choose which profile opens each link
+- Cloud sync — sync profiles, proxies, and groups across devices (self-hostable)
+- E2E encryption — optional end-to-end encrypted sync with a password only you know
+- Zero telemetry — no tracking or device fingerprinting
