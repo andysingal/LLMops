@@ -27,3 +27,8 @@ Deploy a complete, self-hosted AI stack on your own server with a single command
 - Optional auth: Whisper, Kokoro, and Embeddings work without API keys by default (set keys via env files for public deployments)
 - Lightweight stacks for lower memory requirements (as low as ~2.5 GB)
 - GPU acceleration via NVIDIA CUDA
+
+[shannon](https://github.com/KeygraphHQ/shannon)
+
+Shannon is an autonomous, white-box AI pentester for web applications and APIs.
+It analyzes your source code, identifies attack vectors, and executes real exploits to prove vulnerabilities before they reach production.
