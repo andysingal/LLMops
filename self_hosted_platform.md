@@ -16,3 +16,14 @@ Station gives you:
 [I tried using Langfuse as a self-host with DGX Spark to observe and evaluate an LLM application](https://dev.classmethod.jp/articles/langfuse-self-host-llm-observability-handson/)
 
 <img width="737" height="542" alt="Screenshot 2026-05-02 at 8 12 13 AM" src="https://github.com/user-attachments/assets/637c6897-ebfc-47f1-9225-b59dd882fbff" />
+
+[docker-ai-stack](https://github.com/hwdsl2/docker-ai-stack)
+
+Deploy a complete, self-hosted AI stack on your own server with a single command.
+
+- Zero-config: all services auto-configure on first start
+- Secure: Ollama, LiteLLM, and MCP Gateway generate API keys automatically
+- Private: audio, embeddings, and LLM inference all run locally — no data sent to third parties
+- Optional auth: Whisper, Kokoro, and Embeddings work without API keys by default (set keys via env files for public deployments)
+- Lightweight stacks for lower memory requirements (as low as ~2.5 GB)
+- GPU acceleration via NVIDIA CUDA
