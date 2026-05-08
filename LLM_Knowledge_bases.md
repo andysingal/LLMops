@@ -139,3 +139,21 @@ Drop your .tex / .pdf files in a folder. Run one command. Get a fully cross-refe
 [meg_brain_decoding_neuralset_cnn_Marktechpost](https://www.marktechpost.com/2026/05/01/a-coding-implementation-of-end-to-end-brain-decoding-from-meg-signals-using-neuralset-and-deep-learning-for-predicting-linguistic-features/)
 
 
+[Beyond RAG: Why Knowledge Engineering Becomes the Real Moat in the Agent Era](https://dev.to/seekdb/beyond-rag-why-knowledge-engineering-becomes-the-real-moat-in-the-agent-era-41c4)
+
+And three core operations:
+
+- Ingest: parse one new source, summarize, cross-link, update many pages.
+
+- Query: answer from wiki pages (not just raw chunks), file high-value answers back as pages.
+
+- Lint: periodically detect contradictions, stale claims, orphan pages, missing links.
+
+
+[second-brain](https://github.com/henrydaum/second-brain)
+
+Second Brain is an attempt to make a digital brain that approximates the real thing. It's part knowledge engine, part personal operator, and part programmable automation layer.
+
+It continuously indexes your files, remembers durable context, searches the web when local knowledge is not enough, and runs tools and shell commands. It lives in your terminal and Telegram, so your assistant is available everywhere.
+
+Instead of being "just a chatbot," it turns your machine into a system that can observe, search, reason, and act. Point it at your world, give it tools, and it becomes a private AI layer for research, reminders, recurring work, and everyday operations.
