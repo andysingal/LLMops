@@ -43,6 +43,20 @@
 
 [The Best Platforms for Evaluating AI Models in 2025](https://dev.to/debmckinney/the-best-platforms-for-evaluating-ai-models-in-2025-25ed)
 
+[Using Autoresearch to improve harness skills](https://x.com/alokbishoyi97/status/2059610305408462898)
+
+You give it a codebase, a definition of "better", and a budget. It sets up a benchmark (or uses one you already have), generates hypotheses about what to change, runs each hypothesis in its own isolated workspace, scores the result, and keeps a tree of attempts.
+
+Three things make evo different from a single greedy hill-climb thats typical in autoresearch implementations :
+- parallel exploration - Multiple agents run at the same time, each in its own sandbox, each trying a different hypothesis. They don't have to wait their turn.
+- tree search, not linear - evo doesn't only keep the single highest-scoring branch. It keeps branches that win on different slices of the task - specialists alongside generalists. When those specialists can be merged, the result is usually better than either parent alone.
+- gates - any pass/fail check you can write (a regression test, a held-out slice, a no-cheating audit) is a gate. An experiment that fails a gate gets discarded even if its score is the best so far. Without gates, optimization loops find ways to game the metric.
+
+```
+/evo:discover : is the one-time setup. You point it at a codebase and tell it what you want better. It explores the repo, figures out a benchmark (or instruments one if none exists), proposes the optimization target, and registers any gates that should run on every experiment.
+```
+
+
 
 <img width="585" alt="Screenshot 2024-08-22 at 10 30 29 PM" src="https://github.com/user-attachments/assets/15bb43e0-3474-434b-a858-cf5cbbd110d6">
 
