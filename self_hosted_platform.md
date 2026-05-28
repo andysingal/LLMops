@@ -32,3 +32,11 @@ Deploy a complete, self-hosted AI stack on your own server with a single command
 
 Shannon is an autonomous, white-box AI pentester for web applications and APIs.
 It analyzes your source code, identifies attack vectors, and executes real exploits to prove vulnerabilities before they reach production.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+[How Lyft Built a Self-Serve AI Agent Platform for Customer Support with LangGraph and LangSmith](https://www.langchain.com/blog/lyft-built-a-self-serve-ai-agent-platform-for-customer-support-with-langgraph-and-langsmith)
+
+Our "self-serve" platform integrates LangGraph’s subgraph architecture with LangSmith’s robust tracing and monitoring tools, empowering non-technical domain experts to develop and refine AI agents independently. This shift has accelerated agent development from roughly six months to just a few weeks, all while upholding high standards through an automated LLM-as-a-judge evaluation system.
+
+This led us to a pivotal question: Could we empower ops teams, VoC leads, and product managers to construct and refine agents directly using natural language? Our goal was to eliminate the technical intermediary from the daily iteration process to accelerate learning and deployment. 
