@@ -23,3 +23,9 @@ Series
 
 
 [Mastering LLMOps: How to Reliably Deploy Large Language Models in Production](https://generativeai.pub/mastering-llmops-how-to-reliably-deploy-large-language-models-in-production-59d3ee5f670a)
+
+[Roadmap for Mastering LLMOps in 2026](https://machinelearningmastery.com/the-roadmap-for-mastering-llmops-in-2026/)
+
+- How LLMOps differs from traditional MLOps, and what foundational skills you need before touching any LLMOps tooling.
+- How to instrument LLM calls with full tracing, build and evaluate RAG pipelines using RAGAS, and implement cost controls with model routing.
+- A step-by-step learning plan that takes you from your first LLM API project through deploying and evaluating production agent systems.
