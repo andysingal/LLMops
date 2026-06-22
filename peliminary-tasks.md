@@ -147,3 +147,37 @@ At the interface level, this component follows exactly the FTI architecture, but
 - A retrieval client used to do vector searches for RAG
 - Prompt templates used to map user queries and external information to LLM inputs
 - Special tools for prompt monitoring
+
+
+### Article
+[Inference Engines for LLMs & Local AI Hardware](https://x.com/TheAhmadOsman/status/2057183854444843202)
+
+-- Inference Stack
+-- Model architecture ... Dense, MOE, multimodal, long context, hybrid attention, speculative draft pairs
+-- Weights + quants ... GGUF, MLX, EXL 2, AWQ, GPTQ, FP8, FP4, Format kernels are realistic
+-- Execution backend  ... CUDA, ROCm, Metal, Vulkan, SYCL, OpenVINO, DirectML, QWN
+-- Kernels ... Attention, GEMM, MOE, sampling, KV-cache movement, graph capture
+-- Inference Engine .. Scheduler, batching, cache manager, parallelism planner, API server
+--- Serving Layer ... Routing, autoscaling, disaggregation, tenancy, cast controls
+
+
+- Laptop / edge / odd hardware → llama.cpp
+- Mac-first workflows → MLX / MLX-LM
+- Single RTX local inference → ExLlamaV2
+- 2-4+ NVIDIA / CUDA GPUs → ExLlamaV3
+- General production serving → vLLM
+- Long-context / MoE / routing → SGLang
+- NVIDIA max performance → TensorRT-LLM
+- Cluster orchestration → NVIDIA Dynamo
+
+
+
+#### Real bottlenecks:
+
+- 1. Memory bandwidth, not just VRAM size. VRAM determines fit. Bandwidth determines decode speed. Apple's M3 Ultra offers up to 819 GB/s unified-memory bandwidth. NVIDIA's H100 SXM lists 3.35 TB/s GPU memory bandwidth. Unified memory lets you fit models that would not fit in consumer VRAM. HBM lets you serve them faster when the model fits. Fit is not speed. Capacity is not bandwidth.
+- 2. KV cache growth. KV cache grows with batch size and context length. Long-context workloads can run out of memory even when weights fit. PagedAttention partitions the KV cache into blocks, increasing utilization and supporting larger batches.
+- 3. Interconnect. The moment a model crosses GPU boundaries (multi-GPUs), you pay communication cost. Tensor parallelism needs frequent all-reduce collectives. Pipeline parallelism communicates at stage boundaries. Expert parallelism needs all-to-all traffic for MoE. vLLM's docs note that without NVLink, pipeline parallelism can outperform tensor parallelism.
+- 4. Scheduler quality. A good scheduler decides which requests enter the batch, how prefill and decode share the accelerator, whether long prompts block short decodes, and how to avoid starvation. Supporting batching is not the same as behaving like a production-ready scheduler.
+- 5. Runtime overhead. CUDA graphs, kernel fusion, sampling overhead, tokenizer overhead, HTTP overhead, LoRA switching, and structured decoding all matter. At high scale, the annoying 2% overheads form a union and demand attention (no punt intended).
+--- 
+
