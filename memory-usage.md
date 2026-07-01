@@ -12,3 +12,30 @@ In existing inference engines, the KV cache for a request is discarded after its
 
 Episodic memory enables artificial agents to remember and retrieve specific events from their past experiences, making them more context-aware and better able to learn from their own history. It provides detailed contextual information, while semantic memory maintains general facts.
 
+
+***** AI Agent session : everything inside the box is ephemeral 
+
+User Prompt --------------
+                          |
+
+Current Chat History ----- >   Working memory/ Context RAM  ---> LLLM - Q & A Agent (GPT, Claude) ---> Reply
+                          |
+System Prompt ------------
+
+
+Working memory/ context RAM
+
+(skill.md)
+1. Procedural Memory(Files, Text)                        (RAG(top-k search))
+                                                          2. Semantic Memory(Vector Store)
+                                                          - durable facts
+                                                          - user profile
+- How to act(how the agent should act)
+- skills Instructions
+
+
+
+3. Episodic Memory(Vector store)----> RAG(top-k search)    --- saves the messages/activities
+- dated events
+- past chat history
+
