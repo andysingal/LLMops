@@ -157,3 +157,23 @@ Second Brain is an attempt to make a digital brain that approximates the real th
 It continuously indexes your files, remembers durable context, searches the web when local knowledge is not enough, and runs tools and shell commands. It lives in your terminal and Telegram, so your assistant is available everywhere.
 
 Instead of being "just a chatbot," it turns your machine into a system that can observe, search, reason, and act. Point it at your world, give it tools, and it becomes a private AI layer for research, reminders, recurring work, and everyday operations.
+
+
+<img width="900" height="406" alt="Screenshot 2026-07-03 at 6 14 56 PM" src="https://github.com/user-attachments/assets/17293cf2-e3f1-4925-8073-a7183aa05129" />
+
+<img width="924" height="360" alt="Screenshot 2026-07-03 at 6 16 19 PM" src="https://github.com/user-attachments/assets/96367b64-97f4-4256-8a21-ab8a82e1de73" />
+
+<img width="885" height="399" alt="Screenshot 2026-07-03 at 6 17 18 PM" src="https://github.com/user-attachments/assets/f3201b3d-bab6-49d5-89cb-ec4d8556d98f" />
+
+#### Perception
+<img width="829" height="441" alt="Screenshot 2026-07-03 at 6 19 43 PM" src="https://github.com/user-attachments/assets/f4aa9dcb-f0c7-4589-b503-0998ec3be875" />
+
+<img width="906" height="434" alt="Screenshot 2026-07-03 at 6 21 07 PM" src="https://github.com/user-attachments/assets/d5809dda-457a-458d-9526-d4a8ad577a76" />
+
+<img width="885" height="452" alt="Screenshot 2026-07-03 at 6 25 04 PM" src="https://github.com/user-attachments/assets/e4ad6e52-66d7-4482-ba63-7db52b5ef946" />
+
+
+
+
+
+
