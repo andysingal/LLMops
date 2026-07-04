@@ -179,6 +179,22 @@ Instead of being "just a chatbot," it turns your machine into a system that can 
 
 <img width="905" height="441" alt="Screenshot 2026-07-04 at 3 36 32 PM" src="https://github.com/user-attachments/assets/93ac7266-7320-412a-97e2-777da96b9847" />
 
+### memory
+<img width="899" height="375" alt="Screenshot 2026-07-04 at 4 03 40 PM" src="https://github.com/user-attachments/assets/89a3e319-8269-4c43-adb5-19e77a956f20" />
+
+<img width="904" height="413" alt="Screenshot 2026-07-04 at 4 05 24 PM" src="https://github.com/user-attachments/assets/3682328e-550e-41a2-b8cd-eec35be1f0f8" />
+
+<img width="919" height="471" alt="Screenshot 2026-07-04 at 4 06 21 PM" src="https://github.com/user-attachments/assets/2a9530a3-e73a-42dc-b17b-c0c6ef123c1d" />
+
+<img width="919" height="538" alt="Screenshot 2026-07-04 at 4 07 35 PM" src="https://github.com/user-attachments/assets/66f99824-6d28-4e5c-8ef3-5b6039e0e4f8" />
+
+<img width="905" height="450" alt="Screenshot 2026-07-04 at 4 10 25 PM" src="https://github.com/user-attachments/assets/7705ed5f-6df4-4120-a738-d3e8d2f57fe6" />
+
+
+### Action(Hands)
+
+
+
 
 
 
