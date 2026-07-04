@@ -173,6 +173,11 @@ Instead of being "just a chatbot," it turns your machine into a system that can 
 <img width="885" height="452" alt="Screenshot 2026-07-03 at 6 25 04 PM" src="https://github.com/user-attachments/assets/e4ad6e52-66d7-4482-ba63-7db52b5ef946" />
 
 
+<img width="855" height="545" alt="Screenshot 2026-07-04 at 3 34 02 PM" src="https://github.com/user-attachments/assets/d92c7795-ddd2-4533-a839-23e059850852" />
+
+<img width="864" height="528" alt="Screenshot 2026-07-04 at 3 34 55 PM" src="https://github.com/user-attachments/assets/ada0f6bc-ba1e-4b2e-9a1b-a208f41082f5" />
+
+<img width="905" height="441" alt="Screenshot 2026-07-04 at 3 36 32 PM" src="https://github.com/user-attachments/assets/93ac7266-7320-412a-97e2-777da96b9847" />
 
 
 
