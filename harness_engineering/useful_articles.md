@@ -26,5 +26,7 @@ For instance, the system might first query structured metadata to identify relev
 
  the top‑level Researcher Agent is designed to act as a coordinator rather than a single all‑knowing component. Given the clarified user intent and any explicit domain selection from the UI, it will route the query to the appropriate domain sub‑agent, which can then decide how to combine RAG and Text‑to‑SQL within its own boundary. 
 
+[Don't Train the Model,Evolve the Harness](https://huggingface.co/spaces/joelniklaus/harness-optimization#introduction)
+
 
  
