@@ -193,6 +193,51 @@ Instead of being "just a chatbot," it turns your machine into a system that can 
 
 ### Action(Hands)
 
+<img width="905" height="467" alt="Screenshot 2026-07-05 at 11 31 11 AM" src="https://github.com/user-attachments/assets/21103058-5e59-4cf4-8257-51325fed640f" />
+
+
+### Tool:
+A tool is any function , script, API or external system that the agent is given permission to execute
+
+<img width="907" height="441" alt="Screenshot 2026-07-05 at 11 45 00 AM" src="https://github.com/user-attachments/assets/5f22fa65-e926-4f77-bf43-4c52c0046942" />
+
+
+### Security and Guardrails
+<img width="864" height="465" alt="Screenshot 2026-07-05 at 11 47 05 AM" src="https://github.com/user-attachments/assets/28b85244-1be5-4193-935c-1781ae118458" />
+
+<img width="923" height="472" alt="Screenshot 2026-07-05 at 11 48 19 AM" src="https://github.com/user-attachments/assets/8c178712-0b07-49e1-885f-3c0606c95fef" />
+
+
+### Feedback Loop(Learning)
+<img width="934" height="430" alt="Screenshot 2026-07-05 at 12 01 55 PM" src="https://github.com/user-attachments/assets/62840d45-fcfd-4be1-956d-f14f7d0efa46" />
+
+<img width="902" height="432" alt="Screenshot 2026-07-05 at 12 03 03 PM" src="https://github.com/user-attachments/assets/ba8ce410-d667-4c58-9618-2581acef252a" />
+
+<img width="911" height="447" alt="Screenshot 2026-07-05 at 12 15 57 PM" src="https://github.com/user-attachments/assets/216a471e-cbbf-472a-9a94-cb49d8bb1fb0" />
+
+### Voice Agent Communication 
+<img width="869" height="465" alt="Screenshot 2026-07-05 at 12 25 50 PM" src="https://github.com/user-attachments/assets/12f0070b-c04a-4b2d-afb2-cc08dc2cdbb0" />
+
+- Agent to Human Communication
+<img width="908" height="416" alt="Screenshot 2026-07-05 at 12 28 01 PM" src="https://github.com/user-attachments/assets/e86667ac-413e-4e23-8468-4da61f176cdf" />
+
+<img width="859" height="423" alt="Screenshot 2026-07-05 at 12 29 04 PM" src="https://github.com/user-attachments/assets/94d25291-afc3-4e87-80c4-0b9b95284a09" />
+
+
+- Agent to Agent Communication
+
+### Research Agent
+
+<img width="913" height="467" alt="Screenshot 2026-07-05 at 12 38 13 PM" src="https://github.com/user-attachments/assets/8df264e9-4944-4ecd-9b0b-384ce2a3b5f2" />
+
+<img width="881" height="460" alt="Screenshot 2026-07-05 at 12 39 17 PM" src="https://github.com/user-attachments/assets/71ce2446-08db-4951-a261-56ad283405d8" />
+
+
+
+
+
+
+
 
 
 
