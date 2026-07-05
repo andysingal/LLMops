@@ -272,6 +272,9 @@ Agentic Loop: Perception, Reasoning, Action, Learning
 <img width="885" height="431" alt="Screenshot 2026-07-05 at 6 26 09 PM" src="https://github.com/user-attachments/assets/75f52415-f2ba-455b-b004-54da519e1166" />
 
 
+### Agentic AI
+
+
 
 
 
