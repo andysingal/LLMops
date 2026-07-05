@@ -233,7 +233,43 @@ A tool is any function , script, API or external system that the agent is given 
 <img width="881" height="460" alt="Screenshot 2026-07-05 at 12 39 17 PM" src="https://github.com/user-attachments/assets/71ce2446-08db-4951-a261-56ad283405d8" />
 
 
+### System Prompt:
+You are a Research Assistant. Your goal is to write a factual report based on user requests. You must use the web_search tool to gather information. You must not answer from your own knowledge. You must first search, then analyze the results,then write the final report.
 
+Step II: This is a complex reasoning task, so we will choose a high-capability model (like GPT-5, Claude-4 or Gemini Advanced) that is excellenet at planning and function calling 
+
+Step III : The Hands (Tool Definition)
+
+<img width="910" height="525" alt="Screenshot 2026-07-05 at 5 26 33 PM" src="https://github.com/user-attachments/assets/b21a149a-cce1-429a-a041-02c019c8c377" />
+
+
+Step 4: The "memory" (Tha scratchpad")
+
+Short Term Memory: We will use a simple Python list to store the conversation history(chat_history=[]). This list will store both the user's messages and the results of our tool calls
+
+Long Term Memory:
+building an external database.
+Our web_search tool simulates our agent accessing a vast Long Term Memory
+
+The loop: 
+
+<img width="920" height="423" alt="Screenshot 2026-07-05 at 5 46 48 PM" src="https://github.com/user-attachments/assets/578af993-70fc-445b-bf62-d4fcd5554c34" />
+
+
+<img width="842" height="403" alt="Screenshot 2026-07-05 at 5 49 24 PM" src="https://github.com/user-attachments/assets/f0410649-9edf-4fc9-a023-5be77cc28037" />
+
+Agentic Loop: Perception, Reasoning, Action, Learning 
+<img width="864" height="463" alt="Screenshot 2026-07-05 at 6 04 11 PM" src="https://github.com/user-attachments/assets/c13c3e0d-d9fd-41e8-9bee-ffe35eca149b" />
+
+<img width="879" height="459" alt="Screenshot 2026-07-05 at 6 17 46 PM" src="https://github.com/user-attachments/assets/40973db8-3683-4ee4-8c03-a1dd78404651" />
+
+### Example
+
+<img width="880" height="465" alt="Screenshot 2026-07-05 at 6 22 44 PM" src="https://github.com/user-attachments/assets/b6c078ff-6677-41dd-a66e-b333f53cb402" />
+
+<img width="902" height="460" alt="Screenshot 2026-07-05 at 6 24 14 PM" src="https://github.com/user-attachments/assets/744f4186-f58c-4911-8c27-bbde54c85f81" />
+
+<img width="885" height="431" alt="Screenshot 2026-07-05 at 6 26 09 PM" src="https://github.com/user-attachments/assets/75f52415-f2ba-455b-b004-54da519e1166" />
 
 
 
