@@ -274,6 +274,35 @@ Agentic Loop: Perception, Reasoning, Action, Learning
 
 ### Agentic AI
 
+Multi-Agent System for Research + Article Writing
+
+Behavior:
+- Read a human-written article guarantee to understand the topic to rsearch - the more we define the agent's goal, the better
+- Scrape user provided webpages, youtube videos and github repositories to gather more context
+- Iteratively do web serches to learn more about the topic and gather material, following user feedback after each batch of web searches
+- Revise all the gathered content and filter to keep only the most relevant and trustworthy content
+- Write all the gathered content into a final artifcact, which will be used by the writer agent
+
+Scraping solution: use Firecrawl + agentic scraping
+- Websites block suspected bots -- scraping services can act like users and get to the webpage
+- Websites work with HTML: scraping services can parse the HTML and extract the relevant content, which is not s straightforward task to make work on all websites
+- Many websites are SPAs(single applications), content is often rendered dynamically
+
+### Youtube videos
+-Use Gemini to transcribe the video and describe it
+
+### Github:
+US the gitingest open source library which formats Github content into Markdown format that is easily understandable by LLMs
+
+
+Orchestration(where is the full "recipe" of how to use the tools in sequence located?): It's defined in an MCP prompt.
+- When the MCP client connects to MCP server, it can read the recipe of how to do the full research from an MCP prompt of the MCP server, and then MCP client will start using all the tools knowing how they work together
+
+
+
+
+
+
 
 
 
