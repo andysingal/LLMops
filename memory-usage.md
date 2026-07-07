@@ -39,3 +39,44 @@ Working memory/ context RAM
 - dated events
 - past chat history
 
+#### Article
+
+[Your KV Caching Is Broken](https://x.com/akshay_pachaar/status/2074502882812952666)
+
+But prefix caching has a hard ceiling.
+The cached portion must be an exact, byte-for-byte prefix of the new request. Change anything in the cached region (even a single character) and you get a full cache miss.
+This breaks in three common scenarios:
+
+- RAG with multiple documents: You cached document A alone and document B alone. A new query needs both. The second document's cached KV state is invalid because it was computed without awareness of the first document.
+- Document order changes: The same three documents appear in different orders across requests. Every permutation is a cache miss, even though the documents themselves are identical.
+- Growing conversation history: Each new turn changes the full context after the prefix. Earlier cached states beyond the stable prefix become useless.
+
+Google's TurboQuant, a recent KV cache quantization technique, compresses the cache to 3 bits per value with zero accuracy loss. But when it runs inside the inference engine, it causes 20%+ inference slowdown.
+
+Cache management and inference serving are fundamentally different workloads. One is I/O-heavy (moving large tensors between GPU, CPU, and storage). The other is compute-heavy (matrix multiplications on GPU).
+Forcing both into the same process is like running a database and a web server in the same thread. It works until load hits, and then everything fights for the same resources.
+
+***LMCache and the disaggregated approach
+LMCache is an open-source project that takes a fundamentally different approach. Instead of running cache management inside the inference engine, it runs as a completely separate process alongside it.
+
+
+This separation produces three concrete wins.
+- No resource contention: Cache I/O never blocks inference, and inference never blocks cache I/O. The 20% throughput loss from running optimization techniques inside the engine disappears.
+- Zero-copy sharing across GPUs: In the traditional setup, sharing cached data between two GPUs requires multiple memory copies. LMCache lets both GPUs read and write the same memory region directly, skipping those copies entirely.
+- Multi-tier parallel loading: Cached data can live across GPU memory, CPU RAM, local SSD, and remote storage. Traditional approaches check these one by one, bottlenecking on the slowest tier. LMCache checks all of them simultaneously and streams data from wherever it finds a match, in parallel.
+
+LMCache delivers 14x faster time-to-first-token and 4x faster decoding compared to in-process caching. Startup time drops from over 3 minutes to about 30 seconds.
+
+##### Solving the prefix problem with CacheBlend
+
+CacheBlend exploits this by identifying just those few tokens and selectively recomputing only them. Everything else gets reused as-is from the independent caches.
+
+For teams building RAG systems, multi-document Q&A, or agents that accumulate context from multiple sources, this turns every document in the knowledge base into a reusable cached asset, regardless of what order it appears in or what other documents sit alongside it.
+
+LMCache isn't a research prototype. It ships with the infrastructure that production teams expect.
+- Prometheus and OpenTelemetry integration for tracking cache hit rates and I/O performance.
+- Kubernetes operator for deployment
+- CLI for debugging and benchmarking.
+The fault tolerance design is worth noting.
+
+
