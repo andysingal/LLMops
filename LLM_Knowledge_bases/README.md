@@ -298,7 +298,40 @@ US the gitingest open source library which formats Github content into Markdown 
 Orchestration(where is the full "recipe" of how to use the tools in sequence located?): It's defined in an MCP prompt.
 - When the MCP client connects to MCP server, it can read the recipe of how to do the full research from an MCP prompt of the MCP server, and then MCP client will start using all the tools knowing how they work together
 
+<img width="910" height="456" alt="Screenshot 2026-07-07 at 9 38 27 PM" src="https://github.com/user-attachments/assets/78813f20-4642-4eb6-bd2c-95d4d72432cb" />
 
+### What is Multi-Agent System (MAS)
+
+<img width="884" height="508" alt="Screenshot 2026-07-07 at 9 45 11 PM" src="https://github.com/user-attachments/assets/37464a75-5c59-400a-8def-a10b43877c2a" />
+
+### Agent as a service
+
+<img width="880" height="498" alt="Screenshot 2026-07-07 at 9 48 31 PM" src="https://github.com/user-attachments/assets/1ea737f1-6511-4f28-97b2-978b80302f1a" />
+
+
+<img width="936" height="422" alt="Screenshot 2026-07-07 at 9 54 03 PM" src="https://github.com/user-attachments/assets/79cf4800-b1b6-404f-a413-d091973c7f98" />
+
+## Primary Patterns for Agent Coordination
+
+<img width="928" height="448" alt="Screenshot 2026-07-07 at 9 55 02 PM" src="https://github.com/user-attachments/assets/fc80ed54-e7f5-4f4f-b746-bb630e67d0a2" />
+
+<img width="897" height="438" alt="Screenshot 2026-07-07 at 9 58 11 PM" src="https://github.com/user-attachments/assets/6e0a6cc3-3cd3-4b70-a029-cd583b17d00b" />
+
+<img width="950" height="470" alt="Screenshot 2026-07-07 at 9 59 38 PM" src="https://github.com/user-attachments/assets/51530ad5-141c-40dc-be7e-478a15739745" />
+
+<img width="907" height="443" alt="Screenshot 2026-07-07 at 10 00 39 PM" src="https://github.com/user-attachments/assets/8e940f27-52c6-4a75-8fcf-9a58eff19cc2" />
+
+<img width="927" height="469" alt="Screenshot 2026-07-07 at 10 22 44 PM" src="https://github.com/user-attachments/assets/68d96e11-2f13-4efc-b7b1-ac9264741807" />
+
+### Challenges of Agentic AI System
+
+<img width="892" height="457" alt="Screenshot 2026-07-07 at 10 24 53 PM" src="https://github.com/user-attachments/assets/20eb5008-e973-45ed-b04e-7b7956e4ddb3" />
+
+<img width="905" height="402" alt="Screenshot 2026-07-07 at 10 26 25 PM" src="https://github.com/user-attachments/assets/cb33677c-ab4c-429d-ac1b-9f8c1321d952" />
+
+<img width="882" height="449" alt="Screenshot 2026-07-07 at 10 26 58 PM" src="https://github.com/user-attachments/assets/e5601c07-5dbe-4217-a7a5-4f499f1f732e" />
+
+<img width="886" height="413" alt="Screenshot 2026-07-07 at 10 27 52 PM" src="https://github.com/user-attachments/assets/5c8d62a0-56f9-47ee-a84e-f6ec1f7462ae" />
 
 
 
