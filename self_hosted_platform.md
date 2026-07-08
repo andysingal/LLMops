@@ -76,3 +76,6 @@ curl "$AGENT/api/ingest"    -F file=@handbook.pdf            # add knowledge
 curl "$AGENT/api/chat"      -d '{"question":"refund policy?"}'   # grounded answer + sources
 curl "$AGENT/api/recommend" -d '{"like":["sku1","sku2"]}'   # semantic recommendations
 ```
+
+[Self-Hosting LLMs Using Ollama and Docker](https://www.opensourceforu.com/2026/07/self-hosting-llms-using-ollama-and-docker/)
+
