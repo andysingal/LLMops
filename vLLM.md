@@ -49,3 +49,6 @@ vLLM’s prefix caching stores KV blocks for shared prompt prefixes (system prom
 
 #### Examples
 [Example_1](https://github.com/vishakhasadhwani/llm-deployment-demo/blob/main/g4-instance-setup.md)
+
+[Native-speed vLLM transformers modeling backend](https://huggingface.co/blog/native-speed-vllm-transformers-backend)
+
