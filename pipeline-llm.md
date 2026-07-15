@@ -29,3 +29,8 @@ PipesHub is the workplace AI platform for enterprises to improve how businesses 
 [How to Design a Fully Local Agentic Storytelling Pipeline Using Griptape Workflows, Hugging Face Models, and Modular Creative Task Orchestration](https://www.marktechpost.com/2025/12/12/how-to-design-a-fully-local-agentic-storytelling-pipeline-using-griptape-workflows-hugging-face-models-and-modular-creative-task-orchestration/)
 
 In this tutorial, we build a fully local, API-free agentic storytelling system using Griptape and a lightweight Hugging Face model. We walk through creating an agent with tool-use abilities, generating a fictional world, designing characters, and orchestrating a multi-stage workflow that produces a coherent short story.
+
+
+[How to Build a Production-Grade RAG Pipeline](https://pub.towardsai.net/how-to-build-a-production-grade-rag-pipeline-528cc9dd37b7)
+
+In this article, I will demonstrate how to build and deploy a production-grade RAG pipeline that answers questions about U.S. federal copyright laws.
