@@ -59,3 +59,40 @@
 │         │  - Threat Level Assessment & Proximity Alarm Triggering            │         │
 │         └────────────────────────────────────────────────────────────────────┘         │
 └────────────────────────────────────────────────────────────────────────────────────────┘
+
+```
+<img width="1227" height="817" alt="Screenshot 2026-07-30 at 12 02 03 PM" src="https://github.com/user-attachments/assets/92fd26a7-4610-4417-bed9-c8a4feb40876" />
+
+A good architecture starts by separating document storage, signing, identity verification, and notifications into independent services.
+
+- 1. API Gateway
+All requests (upload, sign, download, share) pass through the API Gateway. It handles authentication, rate limiting, request validation, and routing.
+
+- 2. Document Service
+Contracts are uploaded directly to object storage (Amazon S3/GCS/Azure Blob). Metadata such as owner, participants, document status, and version history is stored in PostgreSQL. Large files never pass through application servers.
+
+- 3. Identity Verification Service
+Before signing, users verify their identity using email OTP, SMS OTP, OAuth, or KYC providers depending on compliance requirements. A verified identity token is issued before allowing signatures.
+
+- 4. Signing Service
+Each signature request creates an immutable signing event. Documents are locked while applying a signature to prevent conflicts when multiple users sign simultaneously. Optimistic locking or version numbers help resolve concurrent updates.
+
+- 5. Audit Log Service
+Every action upload, view, download, sign, reject, revoke is published to Kafka. Events are stored in an append-only audit database with timestamps, signer identity, IP address, and device information, creating a tamper-resistant audit trail.
+
+- 6. Notification Service
+Kafka events trigger email, SMS, and push notifications asynchronously so users are notified instantly without slowing down API responses.
+
+- 7. Security
+• Encrypt files at rest (AES-256)
+• TLS for data in transit
+• Short-lived signed URLs for downloads
+• RBAC for document access
+• Hash every signed document (SHA-256) to detect tampering
+• Store digital certificates securely using a KMS/HSM
+
+- 8. Scalability
+Deploy services independently behind load balancers. Use Redis for caching document metadata and sessions. Object storage handles millions of documents, while Kafka decouples services and absorbs traffic spikes. Read replicas improve download performance, and multi-region replication ensures disaster recovery.
+
+
+
