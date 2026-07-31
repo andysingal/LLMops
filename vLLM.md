@@ -52,3 +52,14 @@ vLLM’s prefix caching stores KV blocks for shared prompt prefixes (system prom
 
 [Native-speed vLLM transformers modeling backend](https://huggingface.co/blog/native-speed-vllm-transformers-backend)
 
+[What Is vLLM A Guide to High-Performance LLM Serving](https://factory.fpt.ai/ai-insights/what-is-vllm)
+
+- vLLM helps improve inference speed, GPU memory efficiency and scalability
+- vLLM is an open-source inference engine designed to improve the efficiency of serving large language models.
+- vLLM helps reduce infrastructure costs by maximizing available GPU resources instead of requiring additional hardware.
+- Every user request requires continuous token generation, memory allocation, scheduling and cache management.
+- The combination of PagedAttention and continuous batching enables vLLM to deliver significantly more efficient LLM serving than many traditional inference frameworks. By optimizing both memory allocation and request scheduling, the framework minimizes unnecessary GPU overhead while maximizing the amount of useful computation performed.
+
+  <img width="572" height="687" alt="Screenshot 2026-07-31 at 10 13 56 AM" src="https://github.com/user-attachments/assets/31ef8e6c-d60e-41d5-b241-4135cbea3050" />
+  
+
