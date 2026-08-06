@@ -12,7 +12,7 @@ In the model-serving context, ML and DevOps engineers typically focus less on mo
 
  
  
- Model serving refers to deploying an ML model in a production environment, where it can process new data and generate predictions
+ Model serving refers to deploying an ML model in a production environment, where it can process new data and generate predictions. Amazon and Netflix use model serving to update customer recommendations instantly as users browse. Banks use model serving to block fraudulent transactions during online shopping checkouts, and airline chatbots use it to provide instant flight updates and rebooking options. Business stops for these companies if their model serving systems go down.
 
  Model serving can happen locally (on-device), in-cluster (on-premises), or remotely (on-cloud), depending on the business requirements and infrastructure constraints.
 
