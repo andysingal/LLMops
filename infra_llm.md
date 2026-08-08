@@ -24,3 +24,7 @@ uv run coral resume agents.model=opus run.verbose=true   # resume with overrides
 # monitor progress
 uv run coral ui                                          # open the web dashboard
 ```
+
+[harness and infra](https://x.com/hwchase17/status/2085803148657279479/photo/1)
+
+<img width="881" height="536" alt="Screenshot 2026-08-08 at 2 12 11 PM" src="https://github.com/user-attachments/assets/be3fe763-c63e-44a1-b8a9-75c55f0484e1" />
