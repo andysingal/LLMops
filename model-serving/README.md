@@ -3,7 +3,34 @@ What is a Model::   A machine-learning (ML) model is a mathematical representati
 
 Model data: A model’s data includes its weights, bias, and configuration. Weights and bias are what the model learns during training, and the model configuration holds the metadata to run the model, such as its embeddings and label classes (for classification models), its max_batch_size property (for batch inference), and its input and output tensors.
 
+```
+// In PyTorch, the learnable parameters (i.e. weights and biases) 
+// are stored in "state_dict" 
+torch.save(model.state_dict(), model_weights.pt)
+```
+
 Model architecture:  Architecture refers to the structure and design of an ML model. It defines how the model is organized, including the types and number of layers, the connections between layers, and the operations the model performs. The architecture determines how the model processes input data to produce output predictions or decisions.
+
+```
+class TheModelClass(nn.Module):
+    def __init__(self):
+        super(TheModelClass, self).__init__()
+        self.conv1 = nn.Conv2d(3, 6, 5)
+        self.pool = nn.MaxPool2d(2, 2)
+        self.conv2 = nn.Conv2d(6, 16, 5)
+        self.fc1 = nn.Linear(16 * 5 * 5, 120)
+        self.fc2 = nn.Linear(120, 84)
+        self.fc3 = nn.Linear(84, 10)
+
+    def forward(self, x):
+        x = self.pool(F.relu(self.conv1(x)))
+        x = self.pool(F.relu(self.conv2(x)))
+        x = x.view(-1, 16 * 5 * 5)
+        x = F.relu(self.fc1(x))
+        x = F.relu(self.fc2(x))
+        x = self.fc3(x)
+        return x
+```
 
 Model execution code: A model’s execution code is what the model runs. It generally initializes the architecture in the model serving framework, loads weights, and runs predictions (or other outputs).
 
