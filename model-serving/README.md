@@ -109,5 +109,6 @@ Table 1-1. Fundamental differences between model training and serving
 **** Instead, adopt model-serving-specific frameworks, such as NVIDIA Triton Inference Server, vLLM (Virtual LLM), and SGLang.
 
 
+<img width="694" height="786" alt="Screenshot 2026-08-17 at 5 49 28 PM" src="https://github.com/user-attachments/assets/88e03f2d-f418-4721-ad1a-b08270cd86b1" />
 
 
