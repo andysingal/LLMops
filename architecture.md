@@ -102,4 +102,10 @@ Deploy services independently behind load balancers. Use Redis for caching docum
 
 One piece of architecture that will save you real money: model routing. Not every task needs the most powerful model. Route simple extraction and classification to fast, cheap models, and reserve the frontier models for reasoning, drafting, and decisions. Done right, this cuts AI costs by 80% or more while keeping quality where it counts. Companies that run everything through the biggest model available are burning money on tasks a model 1/20th the price handles perfectly.
 
+<img width="561" height="769" alt="Screenshot 2026-08-18 at 3 08 03 PM" src="https://github.com/user-attachments/assets/0da9caee-4f25-49d1-94d8-d27fa93d3fb8" />
+
+[AI-OS](https://x.com/lukepierceops/status/2089412945583177729/photo/1)
+
+<img width="551" height="758" alt="Screenshot 2026-08-18 at 3 15 53 PM" src="https://github.com/user-attachments/assets/5babcef2-c634-4234-bbca-028e1406663e" />
+
 
