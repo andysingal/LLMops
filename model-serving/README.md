@@ -36,6 +36,31 @@ Model execution code: A model’s execution code is what the model runs. It gene
 
 In the model-serving context, ML and DevOps engineers typically focus less on models’ internal details—such as their architecture, training methods, and file formats—and instead treat models as black boxes. This is because modern model-serving frameworks like vLLM and TensorRT-LLM handle the complexities of model execution for us, providing a high-level abstraction that makes running model predictions simpler and more efficient.
 
+#### Model Lifecycle: From Training to Serving
+Before diving into model serving, it helps to zoom out and understand where serving fits within the broader ML lifecycle. Most discussions of AI focus heavily on model training—collecting data, designing architectures, and improving accuracy. However, in real-world systems, training is only one part of the journey. The value of an ML model is realized only when it is deployed, served reliably, and operated efficiently at scale.
+
+At a high level, the ML lifecycle typically consists of the following stages:
+
+- Data collection
+Raw data is gathered from sources such as user interactions, sensors, logs, documents, or third-party providers. This data is cleaned, labeled, and curated to form training and evaluation datasets.
+
+- Training and fine-tuning
+Models are trained to learn patterns from data. For modern systems, this often includes pretraining large foundation models and fine-tuning them on domain-specific data to meet application requirements.
+
+- Evaluation
+Trained models are validated against offline metrics such as accuracy, loss, or task-specific benchmarks. This stage helps determine whether a model is ready for production use.
+
+- Deployment
+A trained model is packaged and released into a production environment. At this point, the model becomes a software artifact that must be versioned, tested, and integrated with existing systems.
+
+- Serving (this book’s focus)
+The deployed model is made accessible to applications, users, or other systems—typically through APIs or services—so it can generate predictions (inference) on new, unseen data in real time or at scale.
+
+- Optimization and iteration
+Once a model is serving live traffic, teams continuously optimize the model serving performance, reliability, and cost. On the training side, feedback from production usage often drives further fine-tuning, retraining, or architectural changes, restarting the lifecycle.
+
+
+
 
  
  
