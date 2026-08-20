@@ -68,6 +68,9 @@ Once a model is serving live traffic, teams continuously optimize the model serv
 
  Model serving can happen locally (on-device), in-cluster (on-premises), or remotely (on-cloud), depending on the business requirements and infrastructure constraints.
 
+ <img width="513" height="242" alt="Screenshot 2026-08-20 at 6 06 31 PM" src="https://github.com/user-attachments/assets/88531b28-3296-459d-88f9-cd9f4c742b31" />
+
+
  ***This involves setting up the necessary infrastructure—both software and hardware—to ensure that the model can receive input, execute inference, and return results efficiently, scalably, and reliably.
 
  Here are three examples, one for each serving scenario:
