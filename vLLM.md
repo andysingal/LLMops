@@ -63,3 +63,15 @@ vLLM’s prefix caching stores KV blocks for shared prompt prefixes (system prom
   <img width="572" height="687" alt="Screenshot 2026-07-31 at 10 13 56 AM" src="https://github.com/user-attachments/assets/31ef8e6c-d60e-41d5-b241-4135cbea3050" />
   
 
+### Articles
+
+[Inside vLLM: Anatomy of a High-Throughput LLM Inference System](https://vllm.ai/blog/2025-09-05-anatomy-of-vllm)
+
+- LLM engine & engine core: fundamentals of vLLM (scheduling, paged attention, continuous batching, etc.)
+- Advanced features: chunked prefill, prefix caching, guided & speculative decoding, disaggregated P/D
+- Scaling up: from single-GPU to multi-GPU execution
+- Serving layer: distributed / concurrent web scaffolding
+- Benchmarks and auto-tuning: measuring latency and throughput
+
+<img width="630" height="735" alt="Screenshot 2026-08-24 at 1 21 15 PM" src="https://github.com/user-attachments/assets/50e66257-3681-42e7-ac12-dadbc7b480ba" />
+
