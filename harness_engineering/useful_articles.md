@@ -28,5 +28,18 @@ For instance, the system might first query structured metadata to identify relev
 
 [Don't Train the Model,Evolve the Harness](https://huggingface.co/spaces/joelniklaus/harness-optimization#introduction)
 
+[Evaluating OpenWiki with WikiBench](https://x.com/LangChain/status/2092631796252839949)
+
+- It evaluates generated wikis using questions grounded in the underlying codebase. Doing this allows us to measure the difference in quality between different wikis as well as how much the wiki actually helps.
+- We ultimately need to run agents in a real, reproducible, isolated environment, many times in parallel, with a deterministic check at the end. Harbor solves this problem and is now wired directly into Deep Agents, LangSmith Sandboxes, and LangSmith Observability.
+
+
+#### Langchain X Harbor
+
+- One small entry point connects your agent to Harbor. A langgraph.json registry plus a make_graph factory is the only glue you write, and that factory can stay model-agnostic by reading the model Harbor passes from the command line
+- Cloud sandboxes let you scale evals horizontally and run agents in isolation. Each trial gets a fresh LangSmith sandbox, so trials never share state, and you can run hundreds in parallel instead of churning through them serially on one machine
+- Traces turn scores into explanations. With the langsmith plugin, every job lands as a dataset and experiment with the verifier's reward as feedback, and agent traces attach directly so you can see why a trial passed or failed, not just whether it did
+
+
 
  
