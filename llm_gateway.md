@@ -6,3 +6,5 @@
 
 - litellm -> one api for all providers is useful, some llm specific features dont come through cleanly, running it yourself is more work than it looks
 
+- bifrost -> high-performance go ai gateway with one openai-compatible api for 23+ providers, automatic failover, load balancing, semantic caching and observability (https://github.com/maximhq/bifrost)
+
