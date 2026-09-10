@@ -1,0 +1,4 @@
+[Enterprise AI Accuracy: Building a More Trustworthy RAG Application](https://engineering.salesforce.com/enterprise-ai-accuracy-building-a-more-trustworthy-rag-application/)
+
+- Before choosing a parser, classify the information structure you need to preserve. Simple text can follow a fast deterministic path. Pages containing tables, charts, or diagrams need a path capable of interpreting visual content and relationships. Table headers provide the semantic meaning of the data in the cells. Complex tables may require LLM-based processing, while audio and video require transcription that retains speaker separation and timestamps. Images require vision models to understand the image and extract information.
+- Keep headers with their tables, diagrams with their explanatory text, and procedural steps in a coherent sequence. When a split remains necessary, overlapping chunks can preserve continuity across the boundary.
