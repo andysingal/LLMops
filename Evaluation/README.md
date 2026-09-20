@@ -98,3 +98,30 @@ asyncio.run(main())
 <img width="732" height="335" alt="Screenshot 2025-10-24 at 2 44 59 PM" src="https://github.com/user-attachments/assets/6221dfa8-9ad0-4ecb-980e-5548c5c0a55a" />
 
 
+### Article
+
+[Jev-as-a-Judge for Agent Evals](https://www.langchain.com/blog/jev-agent-evals-langsmith)
+
+<img width="741" height="567" alt="Screenshot 2026-09-20 at 2 16 49 PM" src="https://github.com/user-attachments/assets/42758378-e25c-4831-8fb4-d89ffa060d24" />
+
+Jev supports three types of questions:
+
+Choice selects one option and returns probabilities and confidence
+- Example: “Is the final answer grounded in the retrieved evidence?”
+- Response: A float from 0.0 to 1.0, where 1.0 means fully grounded
+-‍ Score rates an answer against an ordered rubric and returns probabilities and confidence‍
+
+‍Example: “How useful is the answer?”
+Response: A rubric score from 1 (unhelpful) to 5 (highly useful), plus probabilities and confidence
+- Noul returns the probability that a yes/no judgment is true
+- Example: “Which search outcome best describes this run?”
+- Response: One of searched_appropriately, searched_unnecessarily, or failed_to_search, plus probabilities and confidence
+
+- Jev does not generate an explanation and then convert that text into a score. It returns typed answers and probabilities directly. 
+
+<img width="720" height="337" alt="Screenshot 2026-09-20 at 2 19 30 PM" src="https://github.com/user-attachments/assets/0b6c9a2e-a81b-40b3-bc0c-ad9229cc5eb1" />
+
+
+<img width="764" height="369" alt="Screenshot 2026-09-20 at 2 13 26 PM" src="https://github.com/user-attachments/assets/946bbcb7-9749-4a8f-b2b5-35b4e26d8adc" />
+
+
