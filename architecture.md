@@ -109,3 +109,7 @@ One piece of architecture that will save you real money: model routing. Not ever
 <img width="551" height="758" alt="Screenshot 2026-08-18 at 3 15 53 PM" src="https://github.com/user-attachments/assets/5babcef2-c634-4234-bbca-028e1406663e" />
 
 
+<img width="626" height="584" alt="Screenshot 2026-10-18 at 8 53 12 AM" src="https://github.com/user-attachments/assets/9d657812-bb26-49c5-8345-5524cc4e7259" />
+
+[Self-Healing RAG Pipeline](https://maziz.me/projects/self-healing-rag)
+
