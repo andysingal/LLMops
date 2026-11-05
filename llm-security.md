@@ -83,3 +83,9 @@ Hallucinations --> Creative storytellers
 [How to red team LLM Agents](https://www.promptfoo.dev/docs/red-team/agents/)
 
 [How to de-identify PHI before it reaches your LLM](https://www.aptible.com/hipaa-ai-security/phi-deidentification)
+
+## Repo
+
+- [ai-security-bootcamp](https://github.com/dearnidhi/ai-security-bootcamp)
+
+
